@@ -35,6 +35,11 @@ const routes: Routes = [
     canActivate: [],
     loadChildren: ()=> import('./wedding/wedding.module').then((m)=>m.WeddingModule)
   },
+  {
+    path: 'sustainability',
+    canActivate: [],
+    loadChildren: ()=> import('./sustainabilty/sustainabilty.module').then((m)=>m.SustainabiltyModule)
+  },
 ];
 
 @NgModule({
