@@ -24,7 +24,12 @@ const routes: Routes = [
     path: 'dining',
     canActivate: [],
     loadChildren: ()=> import('./dining/dining.module').then((m)=>m.DiningModule)
-  }
+  },
+  {
+    path: 'country',
+    canActivate: [],
+    loadChildren: ()=> import('./country/country.module').then((m)=>m.CountryModule)
+  },
 ];
 
 @NgModule({
