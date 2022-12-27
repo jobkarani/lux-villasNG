@@ -10,14 +10,8 @@ const routes: Routes = [
     children: [
         {path:"villa-list",component:VillasListComponent},
         // { path: 'about', component: AboutUsComponent },
-    
       ],
-  },
-
-//   {
-//     path: 'villa-detai',
-//     component: VillasComponent,
-//   }
+  }
 ];
 
 @NgModule({

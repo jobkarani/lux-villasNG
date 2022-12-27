@@ -9,8 +9,12 @@ const routes: Routes = [
     path: 'villas',
     canActivate: [],
     loadChildren: ()=> import('./villas/villas.module').then((m)=>m.VillasModule)
+  },
+  {
+    path: 'offers',
+    canActivate: [],
+    loadChildren: ()=> import('./offers/offers.module').then((m)=>m.OffersModule)
   }
-
 ];
 
 @NgModule({
