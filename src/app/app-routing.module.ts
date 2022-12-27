@@ -40,6 +40,11 @@ const routes: Routes = [
     canActivate: [],
     loadChildren: ()=> import('./sustainabilty/sustainabilty.module').then((m)=>m.SustainabiltyModule)
   },
+  {
+    path: 'blog',
+    canActivate: [],
+    loadChildren: ()=> import('./blog/blog.module').then((m)=>m.BlogModule)
+  }
 ];
 
 @NgModule({
