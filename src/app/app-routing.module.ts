@@ -14,6 +14,11 @@ const routes: Routes = [
     path: 'offers',
     canActivate: [],
     loadChildren: ()=> import('./offers/offers.module').then((m)=>m.OffersModule)
+  },
+  {
+    path: 'experience',
+    canActivate: [],
+    loadChildren: ()=> import('./experience/experience.module').then((m)=>m.ExperienceModule)
   }
 ];
 
