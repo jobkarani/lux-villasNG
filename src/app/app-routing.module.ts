@@ -19,6 +19,11 @@ const routes: Routes = [
     path: 'experience',
     canActivate: [],
     loadChildren: ()=> import('./experience/experience.module').then((m)=>m.ExperienceModule)
+  },
+  {
+    path: 'dining',
+    canActivate: [],
+    loadChildren: ()=> import('./dining/dining.module').then((m)=>m.DiningModule)
   }
 ];
 
