@@ -30,6 +30,11 @@ const routes: Routes = [
     canActivate: [],
     loadChildren: ()=> import('./country/country.module').then((m)=>m.CountryModule)
   },
+  {
+    path: 'wedding',
+    canActivate: [],
+    loadChildren: ()=> import('./wedding/wedding.module').then((m)=>m.WeddingModule)
+  },
 ];
 
 @NgModule({
