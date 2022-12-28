@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BaseLayoutComponent } from '../components/base-layout/base-layout.component';
 import { NavigationComponent } from '../components/navigation/navigation.component';
 import { RouterModule } from '@angular/router';
+import { FooterComponent } from '../components/footer/footer.component';
 
 
 
@@ -10,6 +11,7 @@ import { RouterModule } from '@angular/router';
   declarations: [
     BaseLayoutComponent,
     NavigationComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
@@ -18,6 +20,7 @@ import { RouterModule } from '@angular/router';
   exports:[
     BaseLayoutComponent,
     NavigationComponent,
+    FooterComponent,
   ]
 })
 export class SharedModule { }
