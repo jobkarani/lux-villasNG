@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Country } from 'src/app/Interfaces/country';
 import { TitleCasePipePipe } from 'src/app/Pipes/title-case-pipe.pipe';
+import { HomepagecountriesService } from 'src/app/Services/homepagecountries.service';
 
 @Component({
   selector: 'app-country-list',
@@ -12,14 +13,13 @@ import { TitleCasePipePipe } from 'src/app/Pipes/title-case-pipe.pipe';
 
 export class CountryListComponent implements OnInit{
   
-  constructor(private http: HttpClient) { }
+  constructor(private homepagecountriesService: HomepagecountriesService) { }
 
   country: Country[] = [];
 
  ngOnInit(){
-    this.http.get<Country[]>("https://luxury-villasbe.up.railway.app/country/").subscribe(data =>{
-      this.country = data;
-      console.log(data);
-    })
+  this.homepagecountriesService.getHomeCountries().subscribe(countries => {
+    this.country = countries;
+  });
   }
 }

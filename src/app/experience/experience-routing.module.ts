@@ -8,7 +8,7 @@ const routes: Routes = [
     path: '',
     component: ExperienceComponent,
     children: [
-        {path:"experience-list",component:ExperienceListComponent},
+        {path:"",component:ExperienceListComponent},
         // { path: 'about', component: AboutUsComponent },
       ],
   }
