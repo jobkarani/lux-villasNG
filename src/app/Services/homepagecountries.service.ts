@@ -12,7 +12,7 @@ export class HomepagecountriesService {
 
   getHomeCountries() {
     return this.http.get<Country[]>('https://luxury-villasbe.up.railway.app/country/').pipe(
-      map(countries => countries.slice(-4))
+      map(countries => countries.slice(0, 4))
     );
   }
 }
