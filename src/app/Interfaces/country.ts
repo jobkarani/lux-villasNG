@@ -3,5 +3,5 @@ export interface Country {
   name: string;
   image: string;
   catchy_phrase: string;
-  tag: string;
+  tag_name: string;
 }

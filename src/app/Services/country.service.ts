@@ -9,6 +9,4 @@ export class CountryService {
 
   constructor(private http: HttpClient) { }
 
-  country: Country[] = [];
-
 }

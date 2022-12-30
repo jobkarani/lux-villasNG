@@ -5,10 +5,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { TitleCasePipePipe } from './Pipes/title-case-pipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
+    TitleCasePipePipe,
   ],
   imports: [
     BrowserModule,

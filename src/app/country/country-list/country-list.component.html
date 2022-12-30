@@ -20,9 +20,15 @@
         <p class="section-header__title t-xs">Anantara Signature Experiences</p>
     </div>
     <span class="section-header__textt"> YOUR MOST MEMORABLE MOMENTS </span>
-    <div class="containerr container--full">
-        <div class="col-6">
-            
+    <div class="containerr container--full container-full">
+        <div class="card col-md-6 col-sm-12" *ngFor="let country of country">
+            <div class="card-image image-fluid p-0 m-0">
+                <img src="{{country.image}}" alt="" height="auto" width="100%">
+            </div>
+            <div class="card-img-overlay">
+                <p class="t-name">{{country.tag_name}}</p>
+                <p class="catchy_phrase">{{country.catchy_phrase | titlecase}}</p>
+            </div>
         </div>
     </div>
 </section>
