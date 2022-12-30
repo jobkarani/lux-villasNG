@@ -1,0 +1,127 @@
+.section--center-content {
+    height: auto;
+}
+
+.container {
+    position: relative!important;
+    top: -380px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.container--mw1140 {
+    max-width: 1140px!important;
+}
+
+.section-header {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 40px 5px 0;
+}
+
+.section-header__text {
+    display: block;
+    margin: 0 auto 38px;
+    color: #fff;
+    text-align: center;
+    max-width: 940px;
+    font-size: 2.9em;
+    font-weight: lighter;
+    line-height: 2em;
+    letter-spacing: .1em;
+}
+
+.p {
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1.125em;
+    font-weight: 300;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+}
+
+.section-footer {
+    position: relative;
+    z-index: 10;
+    padding-top: 32px;
+    padding-bottom: 58px;
+    text-align: center;
+}
+
+.btn-book{
+    margin-top: 18px;
+    color: #fff!important;
+    background-color: #b3a258;
+    display: inline-block;
+    min-width: 200px;
+    max-width: none;
+    width: auto;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    font-family: Oswald,Arial Narrow,sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .3em;
+    transition: color .25s;
+}
+
+.btn-book:hover{
+    background-color: #999999;
+    cursor: pointer;
+}
+
+/* ************************************************ */
+
+.section--dark-grey {
+    background-color: #58595b;
+    position: relative!important;
+    top: -380px;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.section-header__title {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-family: Oswald,Arial Narrow,sans-serif;
+    font-size: .75em;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+}
+
+.section-header__textt {
+    display: block;
+    margin: 0 auto 38px;
+    color: #a59451;
+    text-align: center;
+    max-width: 940px;
+    font-family: Raleway,Helvetica,Arial,sans-serif;
+    font-size: 3.125em;
+    font-weight: 100;
+    line-height: 1.25;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+}
+
+.container--full {
+    padding: 0;
+    max-width: none;
+}
+
+.containerr {
+    position: relative!important;
+    max-width: 1600px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
