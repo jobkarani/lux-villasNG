@@ -13,11 +13,28 @@ export class ExperienceListComponent implements OnInit {
 
   country: Country[] = [];
 
+
   ngOnInit(): void {
-      this.http.get<Country[]>('https://luxury-villasbe.up.railway.app/country/').subscribe(data =>{
-        this.country = data;
-        console.log(data);
-      })
+    this.http.get<Country[]>('https://luxury-villasbe.up.railway.app/country/').subscribe(data =>{
+      this.country = data;
+      console.log(data);
+    })
+
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides") as HTMLCollectionOf<HTMLElement>;
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      
+      slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 6000); 
+    }
   }
 
 }
