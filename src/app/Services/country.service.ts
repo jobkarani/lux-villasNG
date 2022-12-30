@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Country } from '../Interfaces/country';
 
 @Injectable({
@@ -7,6 +8,12 @@ import { Country } from '../Interfaces/country';
 })
 export class CountryService {
 
-  constructor(private http: HttpClient) { }
+  id: number = 0;
+
+  constructor(private http: HttpClient) { }  
+
+  getCountryDetails(id: number): Observable<Country[]>{
+    return this.http.get<Country[]>('https://luxury-villasbe.up.railway.app/countryDetails/' + id);
+  }
 
 }

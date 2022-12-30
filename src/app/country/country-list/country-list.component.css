@@ -3,12 +3,9 @@
     background-color: #a59451;
 }
 
-.card-img-overlay {
-    margin: 0 80px;
-}
-
 .container--mw1140 {
     max-width: 1140px!important;
+    margin: 0 80px;
 }
 
 .section-header {

@@ -60,6 +60,19 @@
     letter-spacing: .02em;
 }
 
+.ps{
+    padding: 20px 120px;
+    display: block;
+}
+
+.p{
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5em;
+    letter-spacing: .05em;
+    text-align: center;
+}
+
 .container--full {
     padding: 0;
     max-width: none;
