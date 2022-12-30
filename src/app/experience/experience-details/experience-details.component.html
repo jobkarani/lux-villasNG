@@ -1,1 +1,24 @@
-<p>experience-details works!</p>
+<div class="container-full" *ngFor="let country of singleCountry">
+    <img src="{{ country.image_toper}}" >
+</div>
+
+<div class="container-full">
+    <div  class="section--dark-grey" *ngFor="let country of singleCountry">
+        <div class="section-header">
+            <p class="section-header__title t-xs">{{country.name}}</p>
+        </div>
+        <p class="section-header__textt">{{country.catchy_phrase}}</p>
+        <p class="p">{{country.description1}}</p>
+        <div class="cont" *ngFor="let country of singleCountry">
+            <img src="{{ country.image_toper}}" >
+        </div>
+        <div class="section-header">
+            <p class="section-header__title t-xs">EXPERIENCE {{country.name}}</p>
+        </div>
+        <p class="p">{{country.description2}}</p>
+
+        <div class="section-footerr">
+            <a routerLink="/experience" class="btn btn-experience">Enquire Now</a>
+        </div>
+    </div>
+</div>

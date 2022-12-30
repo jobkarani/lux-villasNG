@@ -29,18 +29,20 @@
         </div>
          <div class="containerr container--full container-full">
             <div class="card col-md-6 col-sm-12" *ngFor="let country of country">
-                <div class="card-image image-fluid p-0 m-0">
-                    <img src="{{country.image}}" alt="" height="auto" width="100%">
-                </div>
-                <div class="card-img-overlay one">
-                    <p class="t-name">{{country.tag_name}}</p>
-                    <p class="catchy_phrase">{{country.catchy_phrase | titlecase}}</p>
-                </div>
-                <div class="card-img-overlay two">
-                    <p class="catchy_phrase">{{country.catchy_phrase | titlecase}}</p>
-                    <p class="t-name">{{country.name}}</p>
-                    <p class="explore">EXPLORE</p>
-                </div>
+                <a [routerLink]="['/experience/experience-details',country.id]">
+                    <div class="card-image image-fluid p-0 m-0">
+                        <img src="{{country.image}}" alt="" height="auto" width="100%">
+                    </div>
+                    <div class="card-img-overlay one">
+                        <p class="t-name">{{country.tag_name}}</p>
+                        <p class="catchy_phrase">{{country.catchy_phrase | titlecase}}</p>
+                    </div>
+                    <div class="card-img-overlay two">
+                        <p class="catchy_phrase">{{country.catchy_phrase | titlecase}}</p>
+                        <p class="t-name">{{country.name}}</p>
+                        <p class="explore">EXPLORE</p>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="section-footerr">
