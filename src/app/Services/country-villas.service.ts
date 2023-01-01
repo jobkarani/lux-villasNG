@@ -12,7 +12,7 @@ export class CountryVillasService {
 
   constructor(private http: HttpClient) {}
 
-  getHomeCountries(id:number):Observable<Villa[]> {
+  getCountryVillas(id:number):Observable<Villa[]> {
     return this.http.get<Villa[]>('https://luxury-villasbe.up.railway.app/countryVillas/'+ id);
   }
 }
