@@ -22,3 +22,36 @@
         </div>
     </div>
 </div>
+
+<div class="container-full section--white">
+    <p class="villah1">Discover the Golden Triangle</p>
+    <div class="flex-container">
+        <div class="offer" *ngFor="let villa of countryVilla">
+            <div class="static-list-item">
+                <div class="static-list-container">
+                    <a routerLink="#" >
+                        <div class="static-list__image">
+                            <img  src="{{villa.image}}" alt="">
+                        </div>
+                    </a>
+                    <div class="static-list-texts">
+                        <div class="static-list-content">
+                            <div class="static-list-text">
+                                <p class="country">{{villa.country_name}}</p>
+                            </div>
+                            <p class="static-list__title"><a routerLink="#">{{villa.heading}}</a></p>
+                            <p class="static-list-price"><span class="currency">USD</span> {{villa.price}}</p>
+                            <div class="readmore">
+                                <p class="desc">{{villa.description}}</p>
+                            </div>
+                        </div>
+                        <div class="static-list__extra-links">
+                            <a href="" class="btn btn-gold">Book Now</a>
+                            <a href="" class="btn btn-ghost">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

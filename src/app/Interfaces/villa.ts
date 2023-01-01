@@ -3,7 +3,8 @@ import { Time } from '@angular/common';
 export interface Villa {
   id: number;
   name: string;
-  country: number;
+  country:number;
+  country_name: string;
   price: number;
   image: string;
   image2: string;

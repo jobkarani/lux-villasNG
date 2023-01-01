@@ -1,14 +1,10 @@
-.container-full{
-    background-color: #eee;
-}
-
 img {
     width:100%;
     height: 100%;
 }
 
 .section--dark-grey {
-    background-color: #fff;
+    background-color: #fafafa;
 }
 
 .section-header{
@@ -93,4 +89,209 @@ img {
     line-height: 1.5;
     text-transform: uppercase;
     letter-spacing: .3em;
+}
+
+
+/* ************************************************************** */
+
+.section--white{
+    background-color: #fff;
+    padding-bottom: 55px ;
+    display: block;
+}
+
+.villah1{
+    color: #a59451;
+    margin-top: 2% !important;
+    margin: 0 auto 38px;
+    text-align: center;
+    max-width: 940px;
+    font-family: Raleway,Helvetica,Arial,sans-serif;
+    font-size: 2.125em;
+    font-weight: 100 !important;
+    line-height: 1.25;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1440px!important;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.offer{
+    width: 33.3333333333%;
+    margin: 0 10px;
+}
+
+.static-list-item{
+    background: transparent;
+    border: 0;
+    margin-bottom: 1em;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1.5em;
+    background-color: #231f20;
+    box-shadow: 0 5px 20px 0 rgb(0 0 0 / 25%);
+}
+
+.static-list-container{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+.static-list__image {
+    position: relative;
+}
+
+.static-list__image>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 0;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.static-list-texts{
+    display: flex;
+    flex: 1 1 auto;
+    padding: 15px;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    background-color: #fff;
+}
+
+.static-list-content{
+    margin: 5px 0;
+    position: relative;
+    z-index: 12;
+    transition: transform .8s;
+    will-change: transform;
+    font-size: .875em;
+    font-weight: 300;
+    line-height: 1.7142857143em;
+    letter-spacing: .05em;
+}
+
+.static-list-text{
+    position: static;
+    padding: 0 5px;
+}
+
+.country{
+    letter-spacing: .05em!important;
+    font-family: Oswald,Arial Narrow,sans-serif;
+    font-size: .875em;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    /* letter-spacing: .3em; */
+}
+
+.static-list__title>a{
+    margin: 0;
+    color: #a59451!important;
+    font-family: Raleway,Helvetica,Arial,sans-serif;
+    font-size: 1.625em;
+    font-weight: 300;
+    line-height: 1.25;
+    letter-spacing: .05em;
+    text-decoration: none;
+}
+
+.static-list-price{
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    letter-spacing: .05em!important;
+    font-family: Oswald,Arial Narrow,sans-serif;
+    font-weight: 800;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+}
+
+.currency{
+    color: #a59451;
+    text-decoration: underline;
+}
+
+.readmore{
+    max-height: none;
+    height: 87px;
+    transition: height 100ms;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5em;
+    letter-spacing: .05em;
+}
+
+.static-list__extra-links{
+    margin-top: auto;
+}
+
+.btn-gold{
+    min-width: 100%;
+    margin: 5px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff!important;
+    background-color: #b3a258;
+    position: relative;
+    top: 0;
+    display: inline-block;
+    padding: 9px 20px;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    border-radius: 2px;
+    transition: background-color .4s,top .1s,padding .4s;
+    font-family: Oswald,Arial Narrow,sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+}
+
+.btn-ghost{
+    min-width: 100%;
+    margin: 5px 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: transparent;
+    color: #333;
+    border: 1px solid rgba(88,89,91,.5);
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    top: 0;
+    margin-bottom: 1em;
+    padding: 9px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background-color .4s,top .1s,padding .4s;
+    font-family: Oswald,Arial Narrow,sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: .25em;
 }
