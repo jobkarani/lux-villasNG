@@ -196,14 +196,13 @@ img {
     font-weight: 400;
     line-height: 1.5;
     text-transform: uppercase;
-    /* letter-spacing: .3em; */
 }
 
 .static-list__title>a{
     margin: 0;
     color: #a59451!important;
     font-family: Raleway,Helvetica,Arial,sans-serif;
-    font-size: 1.625em;
+    font-size: 1.2em;
     font-weight: 300;
     line-height: 1.25;
     letter-spacing: .05em;
