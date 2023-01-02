@@ -31,16 +31,16 @@
                     <div class="card--display" >
                         <div class="card-dis">
                             <div class="dis-img">
-                                <img src="{{offer.image}}" alt="">
+                                <a [routerLink]="['/offer/offer-details',offer.id]"><img src="{{offer.image}}" alt=""></a>
                             </div>
                             <div class="card-tex">
-                                <p class="dis-name"><a routerLink="#">{{offer.name}}</a></p>
+                                <p class="dis-name"><a [routerLink]="['/offer/offer-details',offer.id]">{{offer.name}}</a></p>
                                 <p class="dis-location">{{offer.villa_name}}, {{offer.country_name}}</p>
                                 <p class="static-list-price">FROM <span class="currency">USD</span> {{offer.old_price}}</p>
-                                <p class="dis-desc">{{offer.description}}</p>
+                                <p class="dis-desc"><a [routerLink]="['/offer/offer-details',offer.id]">{{offer.description}}</a></p>
                                 <div class="static-list__extra-links">
                                     <a routerLink="#" class="btn btn-gold">Book Now</a>
-                                    <a routerLink="#" class="btn btn-ghost">See More</a>
+                                    <a [routerLink]="['/offer/offer-details',offer.id]" class="btn btn-ghost">See More</a>
                                 </div>
                             </div>
                         </div>

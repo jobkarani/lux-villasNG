@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { OfferDetailsComponent } from './offer-details/offer-details.component';
 import { OfferListComponent } from './offer-list/offer-list.component';
 import { OffersComponent } from './offers.component';
 
@@ -9,7 +10,7 @@ const routes: Routes = [
     component: OffersComponent,
     children: [
         {path:"",component:OfferListComponent},
-        // { path: 'about', component: AboutUsComponent },
+        { path: 'offer-list/:id', component:  OfferDetailsComponent},
       ],
   }
 ];
