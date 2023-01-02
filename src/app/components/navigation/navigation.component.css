@@ -3,12 +3,15 @@
 .navbars ul{
   list-style-type: none;
 }
+
 span {
   color: white;
 }
+
 .header {
   background-color: #656565;
 }
+
 .navbars {
   display: block;
   justify-content: space-between;
@@ -19,6 +22,11 @@ span {
 
 .sec{
   display: flex;
+}
+
+.best{
+  height: 16px;
+  margin-top: 15px;
 }
 
 .gogo{
@@ -77,9 +85,11 @@ span {
   transition: all 0.3s ease-in-out;
   background-color: #101010;
 }
+
 .hamburger {
   display: none;
 }
+
 .bar {
   display: block;
   width: 25px;
@@ -89,12 +99,14 @@ span {
   transition: all 0.3s ease-in-out;
   background-color: #101010;
 }
+
 .nav-menus {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
 }
+
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -129,9 +141,11 @@ span {
   height: auto;
   width: 100%;
 }
+
 .menu-header{
   background-color: #656565;
 }
+
 .nav-menu-logos{
   color: #fff;
   font-size: 24px;
@@ -139,13 +153,16 @@ span {
   letter-spacing: 2px;
   text-decoration: none;
 }
+
 .nav-menu-logos:hover{
   text-decoration: none;
   color: #fff;
 }
+
 .bar{
   background: #132540;
 }
+
 .menu-header{
   display: none;
 }
@@ -168,12 +185,15 @@ span {
   .phoneHeader{
     margin-left: 2rem;
   }
+
   .contact{
     margin-top: 4rem;
   }
+
   .serv{
       margin-top: 4rem;  
   }
+
   .about{
       margin-top: 4rem;  
   }
@@ -184,6 +204,7 @@ span {
     width: 100%;
     z-index: 988;
   }
+
   .nav-menus {
     position: fixed;
     left: -100%;
@@ -199,9 +220,11 @@ span {
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     z-index: 899;
   }
+
   .nav-menu{
     display: none;
   }
+
   .nav-link {
     font-size: 1.6rem;
     font-weight: 400;
@@ -212,7 +235,7 @@ span {
     color: #fff;
   }
   
-    .nav-menus.active {
+  .nav-menus.active {
     left: 0;
   }
 

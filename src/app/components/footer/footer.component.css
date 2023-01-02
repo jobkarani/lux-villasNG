@@ -135,7 +135,9 @@ input{
     height: 60px;
     margin: 0 auto;
     position: relative;
+    /* background: rgba(128,128,128, .3); */
 }
+
 
 .colored {
     width: 60%;
@@ -169,7 +171,7 @@ input{
 }
 
 .img{
-    float: center;
+    text-align: center;
 }
 
 .joboy{
