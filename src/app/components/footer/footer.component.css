@@ -135,7 +135,6 @@ input{
     height: 60px;
     margin: 0 auto;
     position: relative;
-    /* background: rgba(128,128,128, .3); */
 }
 
 
@@ -171,7 +170,7 @@ input{
 }
 
 .img{
-    text-align: center;
+    margin: 0 90px;
 }
 
 .joboy{
@@ -181,4 +180,206 @@ input{
     font-weight: 300;
     line-height: 1.7142857143em;
     letter-spacing: .05em;
+}
+
+@media only screen and (max-width: 500px) {
+    .container-full{
+        margin-bottom: 0;
+    }
+
+    .socials{
+        display: block;
+    }
+    
+    .left{
+        display: block;
+    }
+
+    .right{
+        display: block;
+        display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .contact{
+        display: block;
+    }
+
+    .phone, .email{
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .icons{
+        margin: 20px 80px;
+    }
+
+    .icons>a{
+        padding: 0 5px;
+    }
+
+    .footer-middle{
+        display: block;
+    }
+
+    .lists{
+        display: block;
+    }
+
+    .subscribe{
+        padding: 0 20px;
+    }
+
+    .footer-brand__item{
+        display: block;
+        text-align: center;
+    }
+
+    .footer-brand__link{
+        width: 30%;
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0;
+    }
+
+    .footer-bottom>.footer-detail>.cont{
+        display: block;
+        position: relative !important;
+        max-width: 1600px;
+        padding: 20px 20px;
+        margin: 0 auto;
+    }
+
+    .copyright {
+        text-align: center;
+        margin-bottom: -1%;
+        width: 100%;
+        color: #999;
+        font-size: .75em;
+        font-weight: 300;
+        line-height: 1.7142857143em;
+        letter-spacing: .05em;
+    }
+
+    .img{
+        margin: 20px 90px;
+    }
+
+    .joboy{
+        text-align: center;
+        margin-bottom: -8%;
+        float: none;
+        color: #999;
+        width: 100%;
+        font-size: .75em;
+        font-weight: 300;
+        line-height: 1.7142857143em;
+        letter-spacing: .05em;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .container-full{
+        margin-bottom: 0;
+    }
+
+    .socials{
+        display: block;
+    }
+    
+    .left{
+        display: block;
+    }
+
+    .right{
+        display: block;
+        display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .contact{
+        display: block;
+    }
+
+    .phone, .email{
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 2em;
+        margin-top: 5%;
+    }
+
+    .icons{
+        margin: 2% 40%;
+    }
+
+    .icons>a{
+        padding: 0 5px;
+        font-size: 1.5em;
+    }
+
+    .footer-middle{
+        display: block;
+    }
+
+    .subscribe{
+        text-align: center;
+    }
+
+    .one, .two, .three{
+        width: 33.33333%;
+    }
+
+    li>a{
+        font-size: 1.1em;
+    }
+
+    .footer-brand__item {
+        display: flex;
+        vertical-align: middle;
+        padding: 0;
+        margin: 0 5px;
+    }
+    
+    .footer-brand__link {
+        display: block;
+        width: 180px;
+        height: 60px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .copyright {
+        float: left;
+        width: 35%;
+        color: #999;
+        font-size: .8em;
+        font-weight: 300;
+        line-height: 1.7142857143em;
+        letter-spacing: .05em;
+    }
+    
+    .img{
+        margin: 0 90px;
+    }
+    
+    .joboy{
+        float: right;
+        color: #999;
+        font-size: .8em;
+        font-weight: 300;
+        line-height: 1.7142857143em;
+        letter-spacing: .05em;
+    }
 }
