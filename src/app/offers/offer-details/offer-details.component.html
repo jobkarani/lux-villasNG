@@ -1,1 +1,57 @@
-<p>offer-details works!</p>
+<div class="section--center-content">
+    <div class="full-bg" *ngFor="let offer of singleOffer">
+        <img src="{{offer.offerDetails_image}}" alt="">
+    </div>
+</div>
+
+<div class="section--light-grey" *ngFor="let offer of singleOffer">
+    <div class="container--mw1320">
+        <div class="content-intro-complex">
+            <div class="section-header">
+                <p class="sec-head">{{offer.name}}</p>
+            </div>
+        </div>
+        <div class="two">
+            <div class="image-col">
+                <img src="{{offer.image}}" alt="">
+            </div>
+            <div class=" text-col">
+                <div class="content-intro">
+                    <p class="static-list-price">FROM <span class="currency">USD</span> {{offer.old_price}}</p>
+                    <p class="btn-buy"><a routerlink="#">Book now</a></p>
+                </div>
+                <div class="readmore">
+                    <p class="t-cm">{{offer.description}}</p>
+                </div>
+                <div class="complementary">
+                    <div class="features-special" *ngIf="singleOffer">
+                        <p><i class="fa-solid fa-gift"></i> {{offer.complimentary1}}</p>
+                        <p>{{offer.complimentary2}}</p>
+                        <p>{{offer.complimentary3}}</p>
+                        <p>{{offer.complimentary4}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="three">
+            <p class="includes">Offer Includes:</p>
+            <ul class="ul">
+                <li>{{offer.inclusion1}}</li>
+                <li>{{offer.inclusion2}}</li>
+                <li>{{offer.inclusion3}}</li>
+                <li>{{offer.inclusion4}}</li>
+                <li>{{offer.inclusion5}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="four">
+        <p class="includes">Terms and Conditions</p>
+        <ul class="ul">
+            <li>{{offer.term1}}</li>
+            <li>{{offer.term2}}</li>
+            <li>{{offer.term3}}</li>
+            <li>{{offer.term4}}</li>
+            <li>{{offer.term5}}</li>
+        </ul>
+    </div>
+</div>

@@ -6,6 +6,7 @@ export interface Offer {
   villa: number;
   villa_name: string;
   image: string;
+  offerDetails_image:string;
   old_price: number;
   description: string;
   inclusion1: string;
