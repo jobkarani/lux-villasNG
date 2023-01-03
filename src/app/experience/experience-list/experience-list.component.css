@@ -209,3 +209,58 @@
     text-transform: uppercase;
     letter-spacing: .3em;
 }
+
+@media only screen and (max-width: 850px) {
+    .containerr{
+        display: block;
+        width: 100%;
+    }
+
+    .containerr>.card{
+        width: 100%; 
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .one{
+        padding: 0;
+        margin-top: 30%;
+        text-align: center;
+        z-index: 1;
+        transform: translateY(0);
+    }
+
+    .fade>img {
+        vertical-align: middle;
+        width:100%;
+        height: 30vh;
+        margin-top: 18%;
+    }
+
+    .ps{
+        padding: 0 30px;
+        display: block;
+    }
+    
+    .p{
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 1.2em;
+        letter-spacing: .05em;
+        text-align: center;
+    }
+
+    .section-header__textt {
+        display: block;
+        margin: 15px auto 38px;
+        color: #a59451;
+        text-align: center;
+        max-width: 940px;
+        font-family: Raleway,Helvetica,Arial,sans-serif;
+        font-size: 1.5em;
+        font-weight: 100;
+        line-height: 1.25;
+        text-transform: uppercase;
+        letter-spacing: .02em;
+    }
+}
