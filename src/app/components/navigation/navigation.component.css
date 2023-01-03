@@ -208,11 +208,11 @@ span {
   .nav-menus {
     position: fixed;
     left: -100%;
-    top: 4rem;
+    top: 5.3rem;
     padding-top: 10%;
     padding-bottom: 10%;
     flex-direction: column;
-    background-color: rgba(132, 122, 122, 0.8);
+    background-color: #656565;
     width: 100%;
     border-radius: 10px;
     text-align: center;
@@ -228,7 +228,7 @@ span {
   .nav-link {
     font-size: 1.6rem;
     font-weight: 400;
-    color: #fff;
+    color: #b3a258;
   }
   
   .nav-link:hover {
@@ -314,6 +314,22 @@ span {
     margin: 0;
     display: flex;
     padding: 0 5px;
+  }
+
+  .nav-menus {
+    position: fixed;
+    left: -100%;
+    top: 4rem;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    flex-direction: column;
+    background-color: #656565;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 899;
   }
 
   .gaga{
