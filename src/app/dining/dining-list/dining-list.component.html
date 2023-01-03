@@ -16,9 +16,9 @@
                             <div class="static-list__image">
                                 <img src="{{rest.image}}" alt="">
                                 <div class="static-list__text">
-                                    <p class="static-list__title"><a routerLink="">{{rest.catchy_phrase}}</a></p>
-                                    <div class="static-list__location">{{rest.name}}</div>
-                                    <p class="static-list__heading">{{rest.heading}}</p>
+                                    <p class="static-list__title"><a [routerLink]="['/dining/dining-details/',rest.id]">{{rest.catchy_phrase}}</a></p>
+                                    <div class="static-list__location"><a [routerLink]="['/dining/dining-details/',rest.id]">{{rest.name}}</a></div>
+                                    <p class="static-list__heading"><a [routerLink]="['/dining/dining-details/',rest.id]">{{rest.heading}}</a></p>
                                 </div>
                             </div>
                             <div class="static-list__text-container">
@@ -32,7 +32,7 @@
                             </div>
                             <div class="static-links">
                                 <a routerLink="" class="btn-gold">make a reservation</a>
-                                <a routerLink="" class="btn-ghost">see more</a>
+                                <a [routerLink]="['/dining/dining-details/',rest.id]"  class="btn-ghost">see more</a>
                             </div>
                         </div>
                     </div>
