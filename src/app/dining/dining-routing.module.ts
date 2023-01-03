@@ -10,7 +10,7 @@ const routes: Routes = [
     component: DiningComponent,
     children: [
         {path:"",component:DiningListComponent},
-        { path: 'dining-details', component: DiningDetailsComponent },
+        { path: 'dining-details/:id', component: DiningDetailsComponent },
       ],
   }
 ];
