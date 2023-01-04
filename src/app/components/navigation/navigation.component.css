@@ -43,7 +43,7 @@ span {
   overflow: hidden;
   color: #fff;
   font-weight: 600;
-  background-color: #b3a258;
+  background-color: #FFC93C;
   border-radius: 0;
 }
 
@@ -160,7 +160,7 @@ span {
 }
 
 .bar{
-  background: #b3a258;
+  background: #FFC93C;
 }
 
 .menu-header{
@@ -228,7 +228,7 @@ span {
   .nav-link {
     font-size: 1.6rem;
     font-weight: 400;
-    color: #b3a258;
+    color: #FFC93C;
   }
   
   .nav-link:hover {
@@ -286,7 +286,7 @@ span {
     overflow: hidden;
     color: #fff;
     font-weight: 600;
-    background-color: #b3a258;
+    background-color: #FFC93C;
     border-radius: 0;
     font-size: large;
   }
@@ -295,7 +295,7 @@ span {
     margin: 0;
     max-height: 85px;
     padding-left: 35px;
-    border-left: 2px solid #b3a258;
+    border-left: 2px solid #FFC93C;
   }
 
   .bar{
@@ -347,14 +347,14 @@ span {
     overflow: hidden;
     color: #fff;
     font-weight: 600;
-    background-color: #b3a258;
+    background-color: #FFC93C;
     border-radius: 0;
   }
 
   .hamburger {
     margin: 0;
     padding-left: 15px;
-    border-left: 2px solid #b3a258;
+    border-left: 2px solid #FFC93C;
   }
 
   .bar{
