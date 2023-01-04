@@ -43,14 +43,14 @@ h2{
 .fa-phone, .fa-envelope{
     margin-right: 10px;
     font-size: 1.55em;
-    color: #a59451;
+    color: #FFC93C;
 }
 
 .fa-brands{
     width: 28px;
     height: 28px;
     font-size: 1.55em;
-    color: #a59451;
+    color: #FFC93C;
     vertical-align: middle;
     margin-right: 0.5em;
 }
@@ -318,14 +318,14 @@ input{
     .fa-phone, .fa-envelope{
         margin-right: 10px;
         font-size: medium;
-        color: #a59451;
+        color: #FFC93C;
     }
     
     .fa-brands{
         width: 28px;
         height: 28px;
         font-size: large;
-        color: #a59451;
+        color: #FFC93C;
         vertical-align: middle;
         margin-right: 0.5em;
     }

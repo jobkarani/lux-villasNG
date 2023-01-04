@@ -49,7 +49,7 @@
 .section-header__textt {
     display: block;
     margin: 15px auto 38px;
-    color: #a59451;
+    color: #FFC93C;
     text-align: center;
     max-width: 940px;
     font-family: Raleway,Helvetica,Arial,sans-serif;
@@ -111,7 +111,7 @@
 
 .t-name{
     display: inline-block;
-    color: #b3a258;
+    color: #FFC93C;
     text-align: center;
     margin: 0;
     font-family: Oswald,Arial Narrow,sans-serif;
@@ -164,7 +164,7 @@
 
 .explore:before {
     padding-right: 0.5em;
-    border-left: 6px solid #a59451;
+    border-left: 6px solid #FFC93C;
     vertical-align: middle;
     border-top: 6px solid transparent;
     border-bottom: 6px solid transparent;
@@ -174,7 +174,7 @@
 
 .explore:after {
     padding-left: 0.25em;
-    border-right: 6px solid #a59451;
+    border-right: 6px solid #FFC93C;
     vertical-align: middle;
     border-top: 6px solid transparent;
     border-bottom: 6px solid transparent;
@@ -193,7 +193,7 @@
 .btn-experience{
     margin-top: 10px;
     color: #fff!important;
-    background-color: #b3a258;
+    background-color: #FFC93C;
     min-width: 200px;
     max-width: none;
     width: auto;
@@ -253,7 +253,7 @@
     .section-header__textt {
         display: block;
         margin: 15px auto 38px;
-        color: #a59451;
+        color: #FFC93C;
         text-align: center;
         max-width: 940px;
         font-family: Raleway,Helvetica,Arial,sans-serif;

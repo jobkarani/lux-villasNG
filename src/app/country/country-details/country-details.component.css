@@ -30,7 +30,7 @@ img {
 .section-header__textt {
     display: block;
     margin: 15px auto 38px;
-    color: #a59451;
+    color: #FFC93C;
     text-align: center;
     max-width: 940px;
     font-family: Raleway,Helvetica,Arial,sans-serif;
@@ -74,7 +74,7 @@ img {
 .btn-experience{
     margin-top: 10px;
     color: #fff!important;
-    background-color: #b3a258;
+    background-color: #FFC93C;
     min-width: 200px;
     max-width: none;
     width: auto;
@@ -100,7 +100,7 @@ img {
 }
 
 .villah1{
-    color: #a59451;
+    color: #FFC93C;
     margin-top: 2% !important;
     margin: 0 auto 38px;
     text-align: center;
@@ -200,7 +200,7 @@ img {
 
 .static-list__title>a{
     margin: 0;
-    color: #a59451!important;
+    color: #FFC93C!important;
     font-family: Raleway,Helvetica,Arial,sans-serif;
     font-size: 1.2em;
     font-weight: 300;
@@ -223,7 +223,7 @@ img {
 }
 
 .currency{
-    color: #a59451;
+    color: #FFC93C;
     text-decoration: underline;
 }
 
@@ -250,7 +250,7 @@ img {
     padding-left: 10px;
     padding-right: 10px;
     color: #fff!important;
-    background-color: #b3a258;
+    background-color: #FFC93C;
     position: relative;
     top: 0;
     display: inline-block;
@@ -329,7 +329,7 @@ img {
     .section-header__textt {
         display: block;
         margin: 15px auto 38px;
-        color: #a59451;
+        color: #FFC93C;
         text-align: center;
         max-width: 940px;
         font-family: Raleway,Helvetica,Arial,sans-serif;
@@ -356,7 +356,7 @@ img {
     }
 
     .villah1{
-        color: #a59451;
+        color: #FFC93C;
         margin-top: 2% !important;
         margin: 0 auto 38px;
         padding: 0 25px;
