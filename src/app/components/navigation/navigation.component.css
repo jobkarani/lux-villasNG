@@ -49,6 +49,7 @@ span {
 
 .top{
   display: flex;
+  padding: 10px 10px;
 }
 
 .account__link--home {
@@ -69,7 +70,7 @@ span {
   width: 15%;
   position: relative;
   top: 0;
-  right: -80%;
+  right: -75%;
 }
 
 .ink{
@@ -112,7 +113,7 @@ span {
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  padding: 0 20%;
+  padding: 10px 20%;
   margin-bottom: 0;
 }
 
