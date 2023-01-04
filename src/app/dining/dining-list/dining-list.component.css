@@ -365,6 +365,28 @@
         background-color: #b3a258;
     }
 
+    .static-list__location>a{
+        letter-spacing: .05em!important;
+        color: #333!important;
+        font-family: Oswald,Arial Narrow,sans-serif;
+        font-size: 1em;
+        font-weight: 600;
+        line-height: 1.5;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    
+    .static-list__heading>a {
+        letter-spacing: .05em!important;
+        text-transform: none!important;
+        color: #333!important;
+        font-family: Oswald,Arial Narrow,sans-serif;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.5;
+        text-decoration: none;
+    }
+
     .contact{
         display: block;
     }
