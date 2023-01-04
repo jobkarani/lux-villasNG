@@ -18,6 +18,5 @@ export class BlogListComponent implements OnInit{
       this.blog = data;
       console.log(this.blog)
     })
-      
   }
 }
