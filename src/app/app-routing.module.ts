@@ -6,6 +6,11 @@ const routes: Routes = [
   { path: '', redirectTo: 'country', pathMatch: 'full' },
 
   {
+    path: 'auth',
+    canActivate: [],
+    loadChildren: ()=> import('./auth/auth.module').then((m)=>m.AuthModule)
+  },
+  {
     path: 'villas',
     canActivate: [],
     loadChildren: ()=> import('./villas/villas.module').then((m)=>m.VillasModule)
