@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BlogDetailsComponent } from './blog-details/blog-details.component';
 import { BlogListComponent } from './blog-list/blog-list.component';
 import { BlogComponent } from './blog.component';
 
@@ -9,7 +10,7 @@ const routes: Routes = [
     component: BlogComponent,
     children: [
         {path:"blog-list",component:BlogListComponent},
-        // { path: 'about', component: AboutUsComponent },
+        { path: 'blog-details/:id', component: BlogDetailsComponent },
       ],
   }
 ];
