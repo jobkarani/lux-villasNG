@@ -1,13 +1,13 @@
-<h1>Login Page</h1>
+<div class="text-center mt-5">
+    <h1>Login Form</h1>
+        <div>
+            <label for="username">Username</label> <br>
+            <input [(ngModel)]="login.username">
+        </div>
+        <div>
+            <label for="password">Password</label> <br>
+            <input [(ngModel)]="login.password" type="password">
+        </div>
 
-<form [formGroup]="myForm">
-    <div>
-        <label for="username">Username</label>
-        <input type="text" >
-    </div>
-    <div>
-        <label for="password">password</label>
-        <input type="password">
-    </div>
-    <button type="submit">Login</button>
-</form>
+        <button (click)="loginUser()" class="btn btn-otline-warning">Login</button>
+</div>
