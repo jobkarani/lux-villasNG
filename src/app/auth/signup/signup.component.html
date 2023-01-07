@@ -36,10 +36,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hakuna Matata Tours Login Page</title>
-	 <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 	
 <body>
@@ -65,13 +63,13 @@
                         <input [(ngModel)]="register.password" type="password" name="password" placeholder="Password" autocomplete="off">
                     </div>
                     <div class="input-box">
-                        <input [(ngModel)]="register.password2" type="password2" name="password2" placeholder="Password" autocomplete="off">
+                        <input [(ngModel)]="register.password2" type="password2" name="password2" placeholder="Confirm Password" autocomplete="off">
                     </div>
                     <button class="input-box" (click)="registerUser()" type="submit">Register</button>
 				</form>
             </div>	
         </div>
-		<a href="#" class='btn'>Forgot Password</a>
+		<a routerLink="#" class='btn'>Sign Up with Google</a>
 	    <a routerLink="/auth/login" class='btn signup'>Login</a>
 	</div>
 	
