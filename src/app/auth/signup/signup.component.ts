@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { UserService } from 'src/app/Services/user.service';
 
 @Component({
   selector: 'app-signup',
@@ -10,7 +10,7 @@ export class SignupComponent implements OnInit{
 
   register:any;
 
-  constructor(private http: HttpClient) {}
+  constructor(private userService: UserService) {}
   
   ngOnInit(): void {
      this.register = {
@@ -24,7 +24,11 @@ export class SignupComponent implements OnInit{
   };
 
   registerUser(){
-    
+    this.userService.registerNewUser(this.register).subscribe(data =>{
+      alert('User ' + this.register.username + ' has been created!')
+    },
+    error => console.log('error',error)
+    )
   }
 
 }

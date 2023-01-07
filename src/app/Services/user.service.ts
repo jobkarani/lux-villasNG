@@ -9,7 +9,7 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
-  registerUser(userData: any): Observable<any>{
+  registerNewUser(userData: any): Observable<any>{
     return this.http.post('https://luxury-villasbe.up.railway.app/register/', userData)
   }
 }

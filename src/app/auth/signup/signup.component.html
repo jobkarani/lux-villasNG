@@ -1,32 +1,30 @@
 <div class="text-center mt-5">
 <h1>Register Form</h1>
-<form >
     <div>
-        <label for="username">Username</label>
+        <label for="username">Username</label> <br>
         <input [(ngModel)]="register.username">
     </div>
     <div>
-        <label for="email">Email</label>
+        <label for="email">Email</label> <br>
         <input [(ngModel)]="register.email">
     </div>
     <div>
-        <label for="first_name">First Name</label>
+        <label for="first_name">First Name</label> <br>
         <input [(ngModel)]="register.first_name">
     </div>
     <div>
-        <label for="last_name">Last Name</label>
+        <label for="last_name">Last Name</label> <br>
         <input [(ngModel)]="register.last_name">
     </div>
     <div>
-        <label for="password">Password</label>
+        <label for="password">Password</label> <br>
         <input [(ngModel)]="register.password" type="password">
     </div>
     <div>
-        <label for="password2">Confirm Password</label>
+        <label for="password2">Confirm Password</label> <br>
         <input [(ngModel)]="register.password2" type="password">
     </div>
     
     <button (click)="registerUser()" class="btn btn-otline-warning">Register</button>
-</form>
 
 </div>
