@@ -1,0 +1,77 @@
+<!-- <div class="text-center mt-5">
+<h1>Register Form</h1>
+    <div>
+        <label for="username">Username</label> <br>
+        <input [(ngModel)]="register.username">
+    </div>
+    <div>
+        <label for="email">Email</label> <br>
+        <input [(ngModel)]="register.email">
+    </div>
+    <div>
+        <label for="first_name">First Name</label> <br>
+        <input [(ngModel)]="register.first_name">
+    </div>
+    <div>
+        <label for="last_name">Last Name</label> <br>
+        <input [(ngModel)]="register.last_name">
+    </div>
+    <div>
+        <label for="password">Password</label> <br>
+        <input [(ngModel)]="register.password" type="password">
+    </div>
+    <div>
+        <label for="password2">Confirm Password</label> <br>
+        <input [(ngModel)]="register.password2" type="password">
+    </div>
+    
+    <button (click)="registerUser()" class="btn btn-otline-warning">Register</button>
+
+</div> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hakuna Matata Tours Login Page</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+	
+<body>
+	
+	<div class="container">
+		<div class="drop">
+			<div class="content">
+				<h2 class='animate__heartBeat'>Register</h2>
+				<form action="">
+					<div class="input-box">
+                        <input [(ngModel)]="register.username" type="text" name="username" placeholder="Username" autocomplete="off">
+					</div>
+                    <div class="input-box">
+                        <input [(ngModel)]="register.email" type="email" name="email" placeholder="Email" autocomplete="off">
+                    </div>
+                    <div class="input-box">
+                        <input [(ngModel)]="register.first_name" type="first_name" name="first_name" placeholder="First Name" autocomplete="off">
+                    </div>
+                    <div class="input-box">
+                        <input [(ngModel)]="register.last_name" type="last_name" name="last_name" placeholder="Last Name" autocomplete="off">
+                    </div>
+					<div class="input-box">
+                        <input [(ngModel)]="register.password" type="password" name="password" placeholder="Password" autocomplete="off">
+                    </div>
+                    <div class="input-box">
+                        <input [(ngModel)]="register.password2" type="password" name="password2" placeholder="Confirm Password" autocomplete="off">
+                    </div>
+                    <button class="input-box" (click)="registerUser()" type="submit">Register</button>
+				</form>
+            </div>	
+        </div>
+		<a routerLink="#" class='btn'>Sign Up with Google</a>
+	    <a routerLink="/auth/login" class='btn signup'>Login</a>
+	</div>
+	
+</body>
+</html>

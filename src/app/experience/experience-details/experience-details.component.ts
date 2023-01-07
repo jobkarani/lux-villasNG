@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Country } from 'src/app/Interfaces/country';
 import { Villa } from 'src/app/Interfaces/villa';
-import { CountryVillasService } from 'src/app/Services/country-villas.service';
 import { CountryService } from 'src/app/Services/country.service';
+import { CountryVillasService } from 'src/app/Services/countryvillas.service';
 
 @Component({
   selector: 'app-experience-details',
