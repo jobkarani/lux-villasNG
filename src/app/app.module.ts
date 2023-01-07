@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { TitleCasePipePipe } from './Pipes/title-case-pipe.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,8 @@ import { TitleCasePipePipe } from './Pipes/title-case-pipe.pipe';
     HttpClientModule,
     SharedModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

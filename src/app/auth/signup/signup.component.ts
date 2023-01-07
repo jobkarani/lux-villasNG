@@ -1,19 +1,30 @@
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
-import { ToastrService } from 'ngx-toastr';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css']
 })
-export class SignupComponent {
+export class SignupComponent implements OnInit{
 
-  username!: string;
-  password!: string;
-  email!: string;
+  register:any;
 
-  constructor(private http: HttpClient, private toastr: ToastrService) {}
+  constructor(private http: HttpClient) {}
+  
+  ngOnInit(): void {
+     this.register = {
+        username: '',
+        email: '',
+        first_name: '',
+        last_name: '',
+        password: '',
+        password2: '',
+      }
+  };
 
+  registerUser(){
+    
+  }
 
 }
