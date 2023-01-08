@@ -2,6 +2,7 @@
     width: 100%;
     background-color: #000;
     height: 100%;
+    margin-top: 9%;
   }
   .carousel-fade .carousel-inner .item {
     -webkit-transition-property: opacity;
@@ -99,8 +100,24 @@
   
   }
 
+.section--dark-greyy{
+    background-color: #58595b;
+    margin-top: -2%;
+    margin-bottom: -3%;
+    padding: 20px 0;
+}
 
-
+.section-textt {
+    display: block;
+    margin: 15px auto 38px;
+    color: #FFC93C;
+    text-align: center;
+    max-width: 940px;
+    font-size: 2.125em;
+    font-weight: 100;
+    line-height: 1.25;
+    letter-spacing: .02em;
+}
 
 .section--center-content {
     height: auto;
@@ -394,6 +411,10 @@
 }
 
 @media only screen and (max-width: 500px) {
+    .carousel{
+        display: none;
+    }
+
     .full-bg>.card-image>img {
         width: 100%;
     }

@@ -1,5 +1,6 @@
 .mySlides {
     display: none;
+    margin-top: 9%;
 }
 
 .fade>img {
