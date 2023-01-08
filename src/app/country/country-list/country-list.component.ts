@@ -1,10 +1,9 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { CountriesVillas } from 'src/app/Interfaces/countries-villas';
 import { Country } from 'src/app/Interfaces/country';
 import { Villa } from 'src/app/Interfaces/villa';
-import { TitleCasePipePipe } from 'src/app/Pipes/title-case-pipe.pipe';
-import { CountryVillasService } from 'src/app/Services/countryvillas.service';
+import { CountriesAndVillasService } from 'src/app/Services/countries-and-villas.service';
 import { HomepagecountriesService } from 'src/app/Services/homepagecountries.service';
 
 @Component({
@@ -16,10 +15,10 @@ import { HomepagecountriesService } from 'src/app/Services/homepagecountries.ser
 
 export class CountryListComponent implements OnInit{
   
-  constructor(private homepagecountriesService: HomepagecountriesService,  private countryVillas:CountryVillasService, private route:ActivatedRoute) { }
+  constructor(private homepagecountriesService: HomepagecountriesService,  private countriesAndVillasService:CountriesAndVillasService, private route:ActivatedRoute) { }
 
   country: Country[] = [];
-  countryVilla: Villa[] = [];
+  countriesVillas: CountriesVillas[] = [];
   id: number =0;
 
  ngOnInit(){
@@ -31,10 +30,10 @@ export class CountryListComponent implements OnInit{
     data =>{
       this.id = data['id'];
       console.log(this.id);
-      this.countryVillas.getCountryVillas(this.id).subscribe(
+      this.countriesAndVillasService.getCountriesAndVillas().subscribe(
         datax =>{
-          this.countryVilla = datax;
-          console.log(this.countryVilla)
+          this.countriesVillas = datax;
+          console.log(this.countriesVillas)
         })
     });
   }
