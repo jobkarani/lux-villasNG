@@ -1,3 +1,158 @@
+.carousel {
+    width: 100%;
+    background-color: #000;
+    height: 100%;
+    margin-top: 9%;
+  }
+  .carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+  }
+  .carousel-fade .carousel-inner .item,
+  .carousel-fade .carousel-inner .active.left,
+  .carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+  }
+  .carousel-fade .carousel-inner .active,
+  .carousel-fade .carousel-inner .next.left,
+  .carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+  }
+  .carousel-fade .carousel-inner .next,
+  .carousel-fade .carousel-inner .prev,
+  .carousel-fade .carousel-inner .active.left,
+  .carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel,
+  .carousel-inner,
+  .carousel-inner .item {
+    height: 100%;
+  }
+  .stopfade {
+    opacity: 0.5;
+  }
+  .slide-content {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+  }
+  .slide-content video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transition: 1s opacity;
+    transition: 1s opacity;
+  }
+  .slide-content video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
+  }
+  .carousel-overlay{
+    position: relative;
+    top: -80%;
+    font-family: Revista-Black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+  }
+ .title {
+    font-size: 14rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    line-height: 13rem;
+  }
+ .description {
+    border-top: 1px solid #fff;
+    margin-top: 15px;
+    font-size: 4rem;
+    color: #fff;
+  }
+  @media screen and (max-width: 640px) {
+      .door .description {
+    font-size: 2rem;
+  }
+  .door .title {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    line-height: 5rem;
+  }
+  .carousel-fade .carousel-control .glyphicon {
+    font-size: 3rem;
+  }
+  
+  }
+
+.section--dark-greyy{
+    background-color: #58595b;
+    margin-top: -2%;
+    margin-bottom: -3%;
+    padding: 5% 0;
+}
+
+.country-villas{
+    padding: 0 5%;
+}
+
+.countries{
+    padding: 1% 2%;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+.country-name a{
+    color: #FFC93C;
+    font-weight: 600;
+}
+
+.country-name a:hover{
+    color: #FFC;
+}
+
+.villa-name a{
+    color: #fff;
+    font-size: small;
+}
+
+.villa-name a:hover{
+    color: #999999;
+}
+
+.section-textt {
+    display: block;
+    margin: 15px auto 38px;
+    color: #fff;
+    text-align: center;
+    max-width: 940px;
+    font-size: 2.125em;
+    font-weight: 100;
+    line-height: 1.25;
+    letter-spacing: .02em;
+}
+
 .section--center-content {
     height: auto;
     background-color: #FFC93C;
@@ -64,7 +219,6 @@
     width: auto;
     margin-right: 0.5em;
     margin-bottom: 0.5em;
-    font-family: Oswald,Arial Narrow,sans-serif;
     font-size: 1em;
     font-weight: 400;
     line-height: 1.5;
@@ -89,7 +243,7 @@
     color: #fff;
     text-align: center;
     margin: 0;
-    font-family: Oswald,Arial Narrow,sans-serif;
+    
     font-size: .75em;
     font-weight: 400;
     line-height: 1.5;
@@ -103,7 +257,7 @@
     color: #FFC93C;
     text-align: center;
     max-width: 940px;
-    font-family: Raleway,Helvetica,Arial,sans-serif;
+    
     font-size: 2.125em;
     font-weight: 100;
     line-height: 1.25;
@@ -139,9 +293,26 @@
     z-index: 1;
 }
 
+.dos{
+    display:none;
+}
+
+.card:hover .uno{
+    display: none;
+}
+
+.card:hover .dos{
+    display: block;
+}
+
+.dos>video{
+    width: 100%;
+    height: 60%;
+}
+
 .one{
     padding: 0;
-    margin-top: 40%;
+    margin-top: 30%;
     text-align: center;
     z-index: 1;
     transform: translateY(0);
@@ -152,7 +323,7 @@
     color: #FFC93C;
     text-align: center;
     margin: 0;
-    font-family: Oswald,Arial Narrow,sans-serif;
+    
     font-size: 1em;
     font-weight: 700;
     line-height: 1.5;
@@ -162,7 +333,7 @@
 
 .catchy_phrase{
     color: #fff;
-    font-family: Raleway,Helvetica,Arial,sans-serif;
+    
     font-size: 1.3em;
     font-weight: 300;
     line-height: 1.25;
@@ -184,7 +355,6 @@
     left: 0;
     display: block;
     text-align: center;
-    background: linear-gradient(to top,rgba(255,255,255,0.1)0%,rgba(255,255,255,1)100%);
 }
 
 .two{
@@ -238,7 +408,7 @@
     padding: 9px 20px;
     border-radius: 0;
     transition: background-color .4s,top .1s,padding .4s;
-    font-family: Oswald,Arial Narrow,sans-serif;
+    
     font-size: 1em;
     font-weight: 600;
     line-height: 1.5;
@@ -281,7 +451,6 @@
         display: block;
         cursor: pointer;
         text-align: center;
-        background: linear-gradient(to top,rgba(255,255,255,0.1)0%,rgba(255,255,255,1)100%);
     }
     
     .two{
@@ -290,6 +459,18 @@
 }
 
 @media only screen and (max-width: 500px) {
+    .section--dark-greyy{
+        margin-top: 12%;
+    }
+
+    .section-textt{
+        font-size: 26px;
+    }
+
+    .carousel{
+        display: none;
+    }
+
     .full-bg>.card-image>img {
         width: 100%;
     }
@@ -352,7 +533,7 @@
         border-radius: 0;
         display: inline-block;
         width: auto;
-        font-family: Oswald,Arial Narrow,sans-serif;
+        
         font-size: .8em;
         font-weight: 400;
         line-height: 1.5;
@@ -371,7 +552,7 @@
         color: #FFC93C;
         text-align: center;
         max-width: 940px;
-        font-family: Raleway,Helvetica,Arial,sans-serif;
+        
         font-size: 1.125em;
         font-weight: 500;
         line-height: 1.25;
@@ -397,7 +578,6 @@
         padding: 9px 20px;
         border-radius: 0;
         transition: background-color .4s,top .1s,padding .4s;
-        font-family: Oswald,Arial Narrow,sans-serif;
         font-size: .8em;
         font-weight: 600;
         line-height: 1.5;

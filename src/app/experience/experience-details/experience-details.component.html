@@ -1,21 +1,21 @@
 <div class="container-full start">
-    <img src="{{ singleCountry[0].image_toper}}" >
+    <video src="{{ singleCountry[0].video_url }}" loop controls></video>
 </div>
 
 <div class="container-full">
-    <div  class="section--dark-grey" *ngFor="let country of singleCountry">
+    <div  class="section--dark-grey">
         <div class="section-header">
-            <p class="section-header__title t-xs">{{country.name}}</p>
+            <p class="section-header__title t-xs">{{singleCountry[0].name}}</p>
         </div>
-        <p class="section-header__textt">{{country.catchy_phrase}}</p>
-        <p class="p">{{country.description1}}</p>
-        <div class="cont" *ngFor="let country of singleCountry">
-            <img src="{{ country.image_toper}}" >
+        <p class="section-header__textt">{{singleCountry[0].catchy_phrase}}</p>
+        <p class="p">{{singleCountry[0].description1}}</p>
+        <div class="cont" >
+            <img src="{{ singleCountry[0].image_toper}}" >
         </div>
         <div class="section-header">
-            <p class="section-header__title t-xs">EXPERIENCE {{country.name}}</p>
+            <p class="section-header__title t-xs">EXPERIENCE {{singleCountry[0].name}}</p>
         </div>
-        <p class="p">{{country.description2}}</p>
+        <p class="p">{{singleCountry[0].description2}}</p>
 
         <div class="section-footerr">
             <a routerLink="/experience" class="btn btn-experience">Enquire Now</a>
@@ -39,7 +39,7 @@
                             <div class="static-list-text">
                                 <p class="country">{{villa.country_name}}</p>
                             </div>
-                            <p class="static-list__title"><a routerLink="#">{{villa.heading}}</a></p>
+                            <p class="static-list__title"><a routerLink="#">{{villa.heading | uppercase}}</a></p>
                             <p class="static-list-price"><span class="currency">USD</span> {{villa.price}}</p>
                             <div class="readmore">
                                 <p class="desc">{{villa.description}}</p>

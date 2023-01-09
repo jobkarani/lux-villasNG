@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { LoginService } from 'src/app/Services/login.service';
 
 @Component({
@@ -10,20 +11,9 @@ import { LoginService } from 'src/app/Services/login.service';
 export class LoginComponent implements OnInit{
 
 
-  // container = document.getElementById("container");
-
-  // toggle = () => {
-  //   container.classList.toggle("sign-in");
-  //   container.classList.toggle("sign-up");
-  // };
-
-  // setTimeout(() => {
-  //   container.classList.add("sign-in");
-  // }, 200);
-
   login:any;
 
-  constructor(private loginService: LoginService) {}
+  constructor(private loginService: LoginService, private router: Router) {}
   
   ngOnInit(): void {
      this.login = {
@@ -34,7 +24,8 @@ export class LoginComponent implements OnInit{
 
   loginUser(){
     this.loginService.logUser(this.login).subscribe(data =>{
-      alert('User ' + this.login.username + ' has been logged!')
+      // alert('User ' + this.login.username + ' has been logged!'),
+      this.router.navigate(['/country']);
     },
     error => console.log('error',error)
     )

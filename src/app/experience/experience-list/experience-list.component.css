@@ -1,5 +1,6 @@
 .mySlides {
     display: none;
+    margin-top: 9%;
 }
 
 .fade>img {
@@ -38,7 +39,7 @@
     color: #000;
     text-align: center;
     margin: 0;
-    font-family: Oswald,Arial Narrow,sans-serif;
+    
     font-size: .75em;
     font-weight: 400;
     line-height: 1.5;
@@ -52,7 +53,7 @@
     color: #FFC93C;
     text-align: center;
     max-width: 940px;
-    font-family: Raleway,Helvetica,Arial,sans-serif;
+    
     font-size: 2.125em;
     font-weight: 100;
     line-height: 1.25;
@@ -101,9 +102,26 @@
     z-index: 1;
 }
 
+.dos{
+    display:none;
+}
+
+.card:hover .uno{
+    display: none;
+}
+
+.card:hover .dos{
+    display: block;
+}
+
+.dos>video{
+    width: 100%;
+    height: 60%;
+}
+
 .one{
     padding: 0;
-    margin-top: 40%;
+    margin-top: 30%;
     text-align: center;
     z-index: 1;
     transform: translateY(0);
@@ -114,7 +132,6 @@
     color: #FFC93C;
     text-align: center;
     margin: 0;
-    font-family: Oswald,Arial Narrow,sans-serif;
     font-size: 1em;
     font-weight: 700;
     line-height: 1.5;
@@ -124,7 +141,6 @@
 
 .catchy_phrase{
     color: #fff;
-    font-family: Raleway,Helvetica,Arial,sans-serif;
     font-size: 1.3em;
     font-weight: 300;
     line-height: 1.25;
@@ -146,7 +162,6 @@
     left: 0;
     display: block;
     text-align: center;
-    background: linear-gradient(to top,rgba(255,255,255,0.1)0%,rgba(255,255,255,1)100%);
 }
 
 .two{
@@ -202,7 +217,6 @@
     padding: 9px 20px;
     border-radius: 0;
     transition: background-color .4s,top .1s,padding .4s;
-    font-family: Oswald,Arial Narrow,sans-serif;
     font-size: 1em;
     font-weight: 600;
     line-height: 1.5;
@@ -256,7 +270,7 @@
         color: #FFC93C;
         text-align: center;
         max-width: 940px;
-        font-family: Raleway,Helvetica,Arial,sans-serif;
+        
         font-size: 1.5em;
         font-weight: 100;
         line-height: 1.25;

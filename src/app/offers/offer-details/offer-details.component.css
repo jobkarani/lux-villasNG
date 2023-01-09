@@ -2,6 +2,7 @@
     position: relative;
     color: #fff;
     background-color: #fafafa;
+    margin-top: 9%;
 }
 
 .full-bg{
@@ -51,7 +52,7 @@
     margin: 0 auto 38px;
     text-align: center;
     max-width: 940px;
-    font-family: Raleway,Helvetica,Arial,sans-serif;
+    
     font-size: 2.125em;
     font-weight: 100;
     line-height: 1.25;
@@ -92,7 +93,7 @@
     display: block;
     margin-bottom: 10px;
     letter-spacing: .1em!important;
-    font-family: Oswald,Arial Narrow,sans-serif;
+    
     font-weight: 600;
     line-height: 1.5;
     text-transform: uppercase;
@@ -227,7 +228,7 @@
         margin: 0 auto;
         text-align: center;
         max-width: 940px;
-        font-family: Raleway,Helvetica,Arial,sans-serif;
+        
         font-size: 1em;
         font-weight: 100;
         line-height: 1.25;
@@ -254,7 +255,7 @@
         display: block;
         margin-bottom: 10px;
         letter-spacing: .1em!important;
-        font-family: Oswald,Arial Narrow,sans-serif;
+        
         font-weight: 600;
         line-height: 1.5;
         text-transform: uppercase;

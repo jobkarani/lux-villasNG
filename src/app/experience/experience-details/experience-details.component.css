@@ -1,6 +1,9 @@
-img {
+.start{
+    margin-top: 9%;
+}
+video{
     width:100%;
-    height: 100%;
+    height: 60%;
 }
 
 .section--dark-grey {
@@ -19,7 +22,7 @@ img {
     color: #000;
     text-align: center;
     margin: 0;
-    font-family: Oswald,Arial Narrow,sans-serif;
+    
     font-size: .75em;
     font-weight: 400;
     line-height: 1.5;
@@ -33,7 +36,7 @@ img {
     color: #FFC93C;
     text-align: center;
     max-width: 940px;
-    font-family: Raleway,Helvetica,Arial,sans-serif;
+    
     font-size: 2.125em;
     font-weight: 100;
     line-height: 1.25;
@@ -48,7 +51,7 @@ img {
     letter-spacing: .05em;
     text-align: center;
     padding: 20px 120px;
-    font-family: Raleway,Helvetica,Arial,sans-serif;
+    
 }
 
 .container--full {
@@ -83,7 +86,7 @@ img {
     padding: 9px 20px;
     border-radius: 0;
     transition: background-color .4s,top .1s,padding .4s;
-    font-family: Oswald,Arial Narrow,sans-serif;
+    
     font-size: 1em;
     font-weight: 600;
     line-height: 1.5;
@@ -106,7 +109,7 @@ img {
     margin: 0 auto 38px;
     text-align: center;
     max-width: 940px;
-    font-family: Raleway,Helvetica,Arial,sans-serif;
+    
     font-size: 2.125em;
     font-weight: 100 !important;
     line-height: 1.25;
@@ -192,7 +195,7 @@ img {
 
 .country{
     letter-spacing: .05em!important;
-    font-family: Oswald,Arial Narrow,sans-serif;
+    
     font-size: .875em;
     font-weight: 400;
     line-height: 1.5;
@@ -202,7 +205,7 @@ img {
 .static-list__title>a{
     margin: 0;
     color: #FFC93C!important;
-    font-family: Raleway,Helvetica,Arial,sans-serif;
+    
     font-size: 1.2em;
     font-weight: 300;
     line-height: 1.25;
@@ -216,7 +219,7 @@ img {
     margin-bottom: 10px;
     font-size: 1.5em;
     letter-spacing: .05em!important;
-    font-family: Oswald,Arial Narrow,sans-serif;
+    
     font-weight: 800;
     line-height: 1.5;
     text-transform: uppercase;
@@ -261,7 +264,7 @@ img {
     border: 0;
     border-radius: 2px;
     transition: background-color .4s,top .1s,padding .4s;
-    font-family: Oswald,Arial Narrow,sans-serif;
+    
     font-size: 1em;
     font-weight: 400;
     line-height: 1.5;
@@ -287,7 +290,7 @@ img {
     text-decoration: none;
     border-radius: 2px;
     transition: background-color .4s,top .1s,padding .4s;
-    font-family: Oswald,Arial Narrow,sans-serif;
+    
     font-size: 1em;
     font-weight: 400;
     line-height: 1.5;
@@ -320,7 +323,7 @@ img {
         color: #000;
         text-align: center;
         margin: 0;
-        font-family: Oswald,Arial Narrow,sans-serif;
+        
         font-size: 1.1em !important;
         font-weight: 100;
         line-height: 1.5;
@@ -334,7 +337,7 @@ img {
         color: #FFC93C;
         text-align: center;
         max-width: 940px;
-        font-family: Raleway,Helvetica,Arial,sans-serif;
+        
         font-size: 1.425em;
         font-weight: 100;
         line-height: 1.25;
@@ -349,7 +352,7 @@ img {
         letter-spacing: .05em;
         text-align: center;
         padding: 5px 20px;
-        font-family: Raleway,Helvetica,Arial,sans-serif;
+        
     }
 
     .flex-container{
@@ -364,7 +367,7 @@ img {
         padding: 0 25px;
         text-align: center;
         max-width: 940px;
-        font-family: Raleway,Helvetica,Arial,sans-serif;
+        
         font-size: 1.7em;
         font-weight: 100 !important;
         line-height: 1.25;

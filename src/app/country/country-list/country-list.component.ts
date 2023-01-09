@@ -1,7 +1,9 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { CountriesVillas } from 'src/app/Interfaces/countries-villas';
 import { Country } from 'src/app/Interfaces/country';
-import { TitleCasePipePipe } from 'src/app/Pipes/title-case-pipe.pipe';
+import { Villa } from 'src/app/Interfaces/villa';
+import { CountriesAndVillasService } from 'src/app/Services/countries-and-villas.service';
 import { HomepagecountriesService } from 'src/app/Services/homepagecountries.service';
 
 @Component({
@@ -13,13 +15,26 @@ import { HomepagecountriesService } from 'src/app/Services/homepagecountries.ser
 
 export class CountryListComponent implements OnInit{
   
-  constructor(private homepagecountriesService: HomepagecountriesService) { }
+  constructor(private homepagecountriesService: HomepagecountriesService,  private countriesAndVillasService:CountriesAndVillasService, private route:ActivatedRoute) { }
 
   country: Country[] = [];
+  countriesVillas: CountriesVillas[] = [];
+  id: number =0;
 
  ngOnInit(){
   this.homepagecountriesService.getHomeCountries().subscribe(countries => {
     this.country = countries;
   });
+
+  this.route.params.subscribe(
+    data =>{
+      this.id = data['id'];
+      console.log(this.id);
+      this.countriesAndVillasService.getCountriesAndVillas().subscribe(
+        datax =>{
+          this.countriesVillas = datax;
+          console.log(this.countriesVillas)
+        })
+    });
   }
 }
