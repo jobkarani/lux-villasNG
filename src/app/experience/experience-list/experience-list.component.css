@@ -1,6 +1,9 @@
+.slideshow-container{
+    margin-top: 9%;
+}
+
 .mySlides {
     display: none;
-    margin-top: 9%;
 }
 
 .fade>img {
