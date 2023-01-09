@@ -75,9 +75,12 @@
       <div class="containerr container--full container-full">
           <div class="card col-md-6 col-sm-12" *ngFor="let country of country">
               <a [routerLink]="['/country/country-details',country.id]">
-                  <div class="card-image image-fluid p-0 m-0">
+                  <div class="card-image uno image-fluid p-0 m-0">
                       <img src="{{country.image}}" alt="" height="auto" width="100%">
                   </div>
+                  <div class="card-image dos image-fluid p-0 m-0">
+                    <video src="{{ country.video_url }}" [muted]="true" autoplay loop></video>
+                </div>
                   <div class="card-img-overlay one">
                       <p class="t-name">{{country.name}}</p>
                       <p class="catchy_phrase">{{country.catchy_phrase | titlecase}}</p>

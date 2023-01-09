@@ -3,6 +3,7 @@ export interface Country {
   name: string;
   image: string;
   image_toper:string;
+  video_url:string;
   catchy_phrase: string;
   tag_name: string;
   description1:string;
