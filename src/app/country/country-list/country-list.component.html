@@ -38,13 +38,13 @@
   <div  class="section--dark-greyy">
     <p class="section-textt"> Begin Your Journey In.... </p>
     <div class="villas">
-      <div class="country-villas">
-        <ol *ngFor="let villas of countriesVillas">
-          <li class="country-name">{{villas.name | uppercase}}</li>
-            <ul *ngIf=" countriesVillas">
-              <li><a href="">{{countriesVillas[0].villa}}</a></li>
+      <div class="country-villas row">
+        <ul class="col-lg-3 col-md-4 col-sm-6 countries" *ngFor="let villas of countriesVillas">
+          <li class="country-name"><a [routerLink]="['/country/country-details',villas.id]">{{villas.name | uppercase}}</a></li>
+            <ul>
+              <li class="villa-name"><a routerLink="#"><i class="fa-solid fa-angle-right"></i> {{villas.villa[0].name}}</a></li>
             </ul>
-        </ol>
+        </ul>
       </div>
     </div>
   </div>
@@ -59,7 +59,7 @@
                   <p class="section-header__text">DREAM ESCAPES</p>
               </div>
               <div class="t-c-1">
-                  <p class="p">Experience Anantara with extraordinary offers curated for you.</p>
+                  <p class="p">Experience Hakuna Matata Tours with extraordinary offers curated for you.</p>
               </div>
               <div class="section-footer">
                   <a routerLink="/villas" class="btn btn-book">BOOK NOW</a>
@@ -69,7 +69,7 @@
   </div>
   <div  class="section--dark-grey container-full">
       <div class="section-header">
-          <p class="section-header__title t-xs">Anantara Signature Experiences</p>
+          <p class="section-header__title t-xs">Hakuna Matata Tours Signature Experiences</p>
       </div>
       <p class="section-header__textt"> YOUR MOST MEMORABLE MOMENTS </p>
       <div class="containerr container--full container-full">

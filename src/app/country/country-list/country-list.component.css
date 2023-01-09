@@ -107,6 +107,40 @@
     padding: 5% 0;
 }
 
+.country-villas{
+    padding: 0 5%;
+}
+
+.countries{
+    padding: 1% 2%;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+.country-name a{
+    color: #FFC93C;
+    font-weight: 600;
+}
+
+.country-name a:hover{
+    color: #FFC;
+}
+
+.villa-name a{
+    color: #fff;
+    font-size: small;
+}
+
+.villa-name a:hover{
+    color: #999999;
+}
+
 .section-textt {
     display: block;
     margin: 15px auto 38px;
@@ -185,7 +219,6 @@
     width: auto;
     margin-right: 0.5em;
     margin-bottom: 0.5em;
-    
     font-size: 1em;
     font-weight: 400;
     line-height: 1.5;
@@ -427,6 +460,14 @@
 }
 
 @media only screen and (max-width: 500px) {
+    .section--dark-greyy{
+        margin-top: 12%;
+    }
+
+    .section-textt{
+        font-size: 26px;
+    }
+
     .carousel{
         display: none;
     }
