@@ -451,7 +451,6 @@ ul li a{
         display: block;
         cursor: pointer;
         text-align: center;
-        background: linear-gradient(to top,rgba(255,255,255,0.1)0%,rgba(255,255,255,1)100%);
     }
     
     .two{
@@ -579,7 +578,6 @@ ul li a{
         padding: 9px 20px;
         border-radius: 0;
         transition: background-color .4s,top .1s,padding .4s;
-        
         font-size: .8em;
         font-weight: 600;
         line-height: 1.5;
