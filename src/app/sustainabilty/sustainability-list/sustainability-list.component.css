@@ -1,0 +1,166 @@
+  
+  .contact-container {
+    margin-top: 9%;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: #FCFDFD;
+  }
+  
+  .left-col {
+    width: 45vw;
+    height: 100%;
+    background-image: url("https://img.freepik.com/free-photo/tropical-beach-landscape-with-deckchair-parasol-from-nosy-be-madagascar-vintage-light-filter_1253-930.jpg?w=740&t=st=1673343454~exp=1673344054~hmac=7736a52d54108dcb23a17106d59264e7cf0365480b91658d213dc2b8d30bed89");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .right-col {
+    background: #FCFDFD;
+    width: 50vw;
+    height: 100vh;
+    padding: 5rem 3.5rem;
+  }
+  
+  h1, label, button, .description {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+  }
+  
+  h1 {
+    color:var(--h1-color);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 300;
+  }
+  
+  p {
+    color: #818386;
+    font-size: 0.9rem;
+    letter-spacing: 0.01rem;
+    width: 40vw;
+    margin: 0.25rem 0;
+  }
+  
+  label, .description {
+    color: #818386;
+    text-transform: uppercase;
+    font-size: 0.625rem;
+  }
+  
+  form {
+    width: 31.25rem;
+    position: relative;
+    margin-top: 2rem;
+    padding: 1rem 0;
+  }
+  
+  input, textarea, label {
+    width: 40vw;
+    display: block;
+  }
+  
+  p, placeholder, input, textarea {
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: #010712;
+  }
+  
+  input, textarea {
+    color: #010712;
+    font-weight: 500;
+    background: #FCFDFD;
+    border: none;
+    border-bottom: 1px solid #818386;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    text-transform: uppercase;
+    font-weight: 300;
+    background: #3B3636;
+    color: #FCFDFD;
+    width: 10rem;
+    height: 2.25rem;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  input:hover, textarea:hover, button:hover {
+    opacity: 0.5;
+  }
+  
+  button:active {
+    opacity: 0.8;
+  }
+  
+  
+  @media only screen and (max-width: 850px) {
+    .contact-container{
+        display: block;
+        height: auto;
+    }
+    .left-col {
+        visibility: visible;
+        width: 100%;
+        height: auto;
+        background-image: url("https://img.freepik.com/free-photo/tropical-beach-landscape-with-deckchair-parasol-from-nosy-be-madagascar-vintage-light-filter_1253-930.jpg?w=740&t=st=1673343454~exp=1673344054~hmac=7736a52d54108dcb23a17106d59264e7cf0365480b91658d213dc2b8d30bed89");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .right-col {
+        background: #FCFDFD;
+        width: 100%;
+        height: auto;
+        padding: 5rem 3.5rem;
+    }
+
+    p {
+        color: #818386;
+        font-size: 0.9rem;
+        letter-spacing: 0.01rem;
+        width: 100%;
+        margin: 0.25rem 0;
+    }
+
+    form {
+    width: 100%;
+    position: relative;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    }
+    
+    input, textarea, label {
+    width: 100%;
+    display: block;
+    }
+      
+}
+
+@media only screen and (max-width: 500px) {
+
+    .right-col {
+        background: #FCFDFD;
+        width: 100%;
+        height: auto;
+        padding: 5rem 2rem;
+    }
+
+    h1{
+        font-size: x-large;
+    }
+
+}

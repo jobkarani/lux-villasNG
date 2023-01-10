@@ -1,12 +1,22 @@
-<div class="container mt-5">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisci repudiandae quasi necessitatibus eum, quos enim facere consequatur culpa quo similique fugit cum iste recusandae neque quibusdam! Eligendi, necessitatibus quod!
-    Officiis, a? Reiciendis deserunt odio mollitia illo soluta placeat quis, nemo, quos porro voluptate amet quisquam sint fugiat. Aliquid soluta reiciendis veniam eum enim totam vero similique quod accusamus molestias?
-    Voluptate veritatis asperiores illum eum dignissimos maiores ullam facilis dolorum doloremque quam, voluptatem blanditiis iusto quae. Laborum, perferendis quas consequuntur, quasi corrupti, laboriosam quisquam soluta odit rerum cumque dignissimos blanditiis.
-    Fuga, aspernatur? Tempora quo quaerat suscipit incidunt, obcaecati mollitia, unde aliquid repellendus saepe in eos eaque ex fugiat impedit perspiciatis modi sunt eius, doloribus quas! Corporis inventore magni commodi ex!
-    Ad totam molestiae sapiente tempora laboriosam animi minima. Soluta blanditiis odio, ea nisi animi eaque culpa nam sunt itaque! Neque architecto doloremque sit eaque alias animi cupiditate, nulla sint eum!
-    Eos odit maiores itaque. Vel unde id est temporibus ratione, necessitatibus neque ipsa. Deleniti ullam, libero nesciunt neque repellendus qui sapiente odit eius ipsum sequi quaerat! Quod dolores voluptatem dicta!
-    Commodi ad fugiat excepturi quis, asperiores optio! Quos ex facilis sunt dolore explicabo officia eius? Possimus dignissimos molestias recusandae soluta exercitationem tempore nihil voluptatum maiores voluptatem? Vel quisquam possimus ex.
-    Sint labore, atque, incidunt blanditiis fugiat ea repellendus ratione quas sunt omnis minus maxime velit placeat quae quo debitis non eius voluptas aliquam sequi nam. Impedit omnis esse neque consequatur!
-    Assumenda, sunt sit sint ad maxime soluta? Inventore necessitatibus sint impedit quaerat! Sint cupiditate corrupti dolorum quaerat, explicabo pariatur corporis debitis, neque, quas perferendis aliquid modi sapiente tempora laborum natus?
-    Illo vel placeat reprehenderit dignissimos neque? Eaque esse assumenda nobis laborum beatae ex illum magnam molestias id, totam voluptates ullam vero, quas officiis obcaecati, dolor dolore distinctio optio tempore impedit.</p>
+<div class="contact-container">
+  <div class="left-col"></div>
+  <div class="right-col">
+    <h1>Contact us</h1>
+    <p>
+      Planning to go on vacation soon? Get insider tips on where to go, things
+      to do and find best deals for your next adventure.
+    </p>
+
+    <form id="contact-form" method="post">
+      <label for="name">Full name</label>
+      <input type="text" id="name" name="name" placeholder="Your Full Name" required />
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Your Email Address" required />
+      <label for="message">Message</label>
+      <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+      <button type="submit" id="submit" name="submit">Send</button>
+    </form>
+    <div id="error"></div>
+    <div id="success-msg"></div>
+  </div>
 </div>

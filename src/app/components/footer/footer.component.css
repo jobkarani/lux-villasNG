@@ -5,7 +5,7 @@
 .socials{
     display: flex;
     background-color: #141313;
-    padding: 20px;
+    padding: 20px 50px;
 }
 
 .left{
@@ -79,9 +79,9 @@ a{
     display: block;
 }
 
-.one,.two,.three{
+.one,.two{
     display: inline-block;
-    padding-right: 100px;
+    padding-right: 250px;
     margin: 5px 0 4px;
     vertical-align: top;
 }
@@ -236,12 +236,11 @@ input{
         text-align: center;
     }
 
-    .one, .two, .three{
-        width: 33.33333%;
-    }
+    
 
     li>a{
         font-size: 1.1em;
+        width: 100%;
     }
 
     .footer-brand__item {
@@ -281,6 +280,7 @@ input{
         line-height: 1.7142857143em;
         letter-spacing: .05em;
     }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -290,6 +290,7 @@ input{
 
     .socials{
         display: block;
+        padding: 20px 30px;
     }
     
     .left{
@@ -309,6 +310,10 @@ input{
         font-size: medium;
         font-weight: 700;
         padding: 10px 0;
+    }
+
+    .email{
+        margin: 0 5px;
     }
 
     .email, .phone{
@@ -342,6 +347,10 @@ input{
         text-align: center;
     }
 
+    .chat{
+        margin-left: 90px !important;
+    }
+
     .icons{
         margin: 5px 80px;
     }
@@ -361,6 +370,14 @@ input{
     .one, .two, .three{
         display: block;
         width: 100%;
+    }
+
+    .one, .two{
+        width: 100%;
+    }
+
+    .one>.ul,.two>.ul{
+        width: 200%;
     }
 
     .subscribe{
