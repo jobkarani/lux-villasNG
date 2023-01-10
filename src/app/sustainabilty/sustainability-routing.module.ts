@@ -8,8 +8,7 @@ const routes: Routes = [
     path: '',
     component: SustainabilityComponent,
     children: [
-        {path:"sustainability-list",component:SustainabilityListComponent},
-        // { path: 'about', component: AboutUsComponent },
+        {path:"",component:SustainabilityListComponent},
       ],
   }
 ];
