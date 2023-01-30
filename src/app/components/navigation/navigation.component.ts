@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
+  constructor() {};
+
+
   ngOnInit(): void {
+
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menus");
     const navLink = document.querySelectorAll(".nav-links");

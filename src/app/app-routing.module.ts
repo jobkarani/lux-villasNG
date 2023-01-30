@@ -44,6 +44,11 @@ const routes: Routes = [
     path: 'blog',
     canActivate: [],
     loadChildren: ()=> import('./blog/blog.module').then((m)=>m.BlogModule)
+  },
+  {
+    path: 'booking',
+    canActivate: [],
+    loadChildren: ()=> import('./bookings/bookings.module').then((m)=>m.BookingsModule)
   }
 ];
 

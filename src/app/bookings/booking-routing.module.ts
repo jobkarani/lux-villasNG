@@ -1,0 +1,21 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { BookComponent } from './book/book.component';
+import { BookingsComponent } from './bookings.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: BookingsComponent,
+    children: [
+        {path:"",component:BookComponent},
+        // { path: 'country-details/:id', component: CountryDetailsComponent },
+      ],
+  }
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
+})
+export class BookingsRoutingModule {}

@@ -35,15 +35,6 @@ span {
   transition: max-height 1s cubic-bezier(.19,1,.22,1),margin 1s cubic-bezier(.19,1,.22,1);
 }
 
-.nav-left{
-  display: flex;
-  width: 15%;
-  position: relative;
-  top: 0;
-  right: -5%;
-}
-
-
 .book-btn-nav{
   float: right;
   max-width: 35%;
@@ -54,23 +45,6 @@ span {
   font-weight: 600;
   background-color: #FFC93C;
   border-radius: 0;
-}
-
-.account__link--home {
-  margin-right: 10px;
-  position: relative;
-  display: block;
-  margin: 4px 0 8px;
-  color: #fff;
-  transition: color .25s;
-  font-size: .8em;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.ink{
-  margin-left: 5%;
 }
 
 .bar {

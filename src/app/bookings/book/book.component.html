@@ -1,0 +1,50 @@
+<div class="container-full">
+    <form action="">
+        <div class="nike form-row d-flex">
+          <div class="form-group col-6">
+            <label for="inputfirstname">First Name</label>
+            <input [(ngModel)]="booking.firstname" type="text" class="form-control" id="inputfirstname" placeholder="First Name">
+          </div>
+          <div class="form-group col-6">
+            <label for="inputlastname">Last Name</label>
+            <input [(ngModel)]="booking.lastname" type="text" class="form-control" id="inputlastname" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="nike form-group">
+          <label for="inputemail">Email</label>
+          <input [(ngModel)]="booking.email" type="email" class="form-control" id="inputemail" placeholder="email">
+        </div>
+        <div class="nike form-group">
+          <label for="inputphone">Phone Number</label>
+          <input [(ngModel)]="booking.phone" type="text" class="form-control" id="inputphone" placeholder="Phone">
+        </div>
+        <div class="nike form-row d-flex">
+          <div class="form-group col-8">
+            <label for="inputvilla">Villa</label>
+            <select id="inputvilla" class="form-control">
+              <option selected>Choose a Villa</option>
+              <option *ngFor="let villa of villa">{{villa.name | titlecase}}</option>
+            </select>
+          </div>
+          <div class="form-group col-4">
+            <label for="inputguests">No of Guests</label>
+            <input [(ngModel)]="booking.guestsnumber" type="number" class="form-control" id="inputguests" placeholder="Guests">
+          </div>
+        </div>
+        <div class="nike form-row d-flex">
+            <div class="form-group col-6">
+              <label for="inputstartdate">Check In</label>
+              <input [(ngModel)]="booking.start_date" type="date" class="form-control" id="inputstartdate" placeholder="Select a date" required>
+            </div>
+            <div class="form-group col-6">
+              <label for="inputenddate">Check Out</label>
+              <input [(ngModel)]="booking.end_date" type="date" class="form-control" id="inputenddate" placeholder="Select a date" required>
+            </div>
+          </div>
+        <div class="nike form-group">
+            <label for="inputspacialrequest">Special Request</label>
+            <textarea [(ngModel)]="booking.special_requests" type="text" class="form-control" id="inputspacialrequest" placeholder="Tell us something ..."> </textarea>
+        </div>
+        <button (click)="onSubmit()" type="submit" class="nike btn">Make Reservation</button>
+      </form>
+</div>

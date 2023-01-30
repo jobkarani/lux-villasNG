@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CountriesVillas } from 'src/app/Interfaces/countries-villas';
 import { Country } from 'src/app/Interfaces/country';
-import { Villa } from 'src/app/Interfaces/villa';
 import { CountriesAndVillasService } from 'src/app/Services/countries-and-villas.service';
 import { HomepagecountriesService } from 'src/app/Services/homepagecountries.service';
 

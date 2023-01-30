@@ -1,0 +1,61 @@
+.container-full{
+    margin-top: 8%;
+    padding: 10% 10%;
+    background-image: url('https://img.freepik.com/premium-photo/3d-rendering-hotel-s-reception-office-with-bell-key-wooden-desk_771335-41826.jpg?w=996');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form{
+    padding: 20px 30px;
+    background: rgb(255,255,255, .4);
+    border-radius: 10px;
+}
+
+.nike{
+    margin: 10px 0;
+}
+
+label{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+input, input::placeholder, select{
+    color: #FFC93C;
+}
+
+.btn{
+    margin-left: 40%;
+    background-color: #FFC93C;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 1px solid #FFC93C;
+    color: #FFC93C;
+}
+
+@media only screen and (max-width: 850px) {
+    .btn{
+        margin-left: 33%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container-full{
+        margin-top: 15%;
+        padding: 10% 2%;
+    }
+
+    label{
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .btn{
+        margin-left: 15%;
+    }
+}
