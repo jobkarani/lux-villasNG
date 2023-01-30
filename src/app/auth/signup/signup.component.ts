@@ -28,8 +28,7 @@ export class SignupComponent implements OnInit{
     this.userService.registerNewUser(this.register).subscribe(data =>{
       // alert('User ' + this.register.username + ' has been created!')
       this.router.navigate(['/country']);
-    },
-    error => console.log('error',error)
+    }
     )
   }
 

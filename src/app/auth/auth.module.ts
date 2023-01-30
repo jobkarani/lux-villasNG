@@ -6,6 +6,8 @@ import { AuthRoutingModule } from './auth-routing.module';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { NavigationComponent } from '../components/navigation/navigation.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -13,11 +15,11 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
   declarations: [
     AuthComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     CommonModule,
-    // SharedModule,
+    SharedModule,
     AuthRoutingModule,
     ReactiveFormsModule,
     FormsModule,

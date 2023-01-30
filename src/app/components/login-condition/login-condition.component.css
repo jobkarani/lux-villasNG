@@ -1,0 +1,23 @@
+.nav-left{
+  display: flex;
+  width: 150%;
+  position: relative;
+  top: 0;
+}
+
+.account__link--home {
+    margin-right: 10px;
+    position: relative;
+    display: block;
+    margin: 4px 0 8px;
+    color: #fff;
+    transition: color .25s;
+    font-size: .8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .ink{
+    margin-left: 5%;
+  }
