@@ -21,7 +21,7 @@ label{
     font-size: 20px;
 }
 
-input, input::placeholder, select{
+input, input::placeholder, select, textarea::placeholder{
     color: #FFC93C;
 }
 
