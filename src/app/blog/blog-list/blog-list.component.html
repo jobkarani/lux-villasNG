@@ -1,0 +1,34 @@
+<div class="container-full">
+    <div class="cont">
+        <p class="t-xs">Travel tales by hakuna matata tours</p>
+        <p class="cont-header">hakuna matata blog</p>
+        <div class="t-p">
+            <p>Find inspiration for your next adventure, whether trekking through the jungle with an elephant or traversing the largest sand desert in the world. Let your imagination run wild.</p>
+        </div>
+    </div>
+    <div class="section--light-grey">
+        <div class="container--mw1320">
+            <div class="list">
+                <div class="discovery col-md-6 col-sm-12" *ngFor="let blog of blog">
+                    <div class="blog-cta">
+                        <a [routerLink]="['/blog/blog-details/',blog.id]" class="content">
+                            <div class="blog-cta__image">
+                                <img src="{{blog.image_cover}}" alt="">
+                            </div>
+                            <div class="blog-cta__text">
+                                <div class="blog-cta__onscreen">
+                                    <p class="blog-cta__heading">{{blog.tag_name}}</p>
+                                    <p class="blog-cta__title">{{blog.heading}}</p>
+                                </div>
+                                <div class="blog-cta__offscreen">
+                                    <p class="blog-cta__description">{{blog.text1}}</p>
+                                    <a [routerLink]="['/blog/blog-details/',blog.id]" class="btn text-cta"><i class="fa-solid fa-angles-right"></i> View more</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="https://assets.anantara.com/image/upload/q_auto,f_auto,c_limit,w_1920/media/minor/anantara/images/brandpage/experiences/anantara_experience_maldives_1920x600.jpg" >
+    </div>
+    
+    <div class="mySlides fade">
+        <img src="https://assets.anantara.com/image/upload/q_auto,f_auto,c_limit,w_1920/media/minor/anantara/images/brandpage/signature-experiences/anantara_signature_experience_1920x600_2.jpg" >
+    </div>
+    
+    <div class="mySlides fade">
+        <img src="https://assets.anantara.com/image/upload/q_auto,f_auto,c_limit,w_1920/media/minor/anantara/images/brandpage/signature-experiences/anantara_signature_experience_1920x600_4.jpg" >
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://assets.anantara.com/image/upload/q_auto,f_auto,c_limit,w_1920/media/minor/anantara/images/brandpage/signature-experiences/anantara_signature_experience_1920x600_6.jpg" >
+    </div>
+</div>
+
+
+<div class="container-full">
+    <div  class="section--dark-grey">
+        <div class="section-header">
+            <p class="section-header__title t-xs">JOURNEYS OF ADVENTURE AND DISCOVERY</p>
+        </div>
+        <p class="section-header__textt"> HAKUNA MATATA TOURS SIGNATURE EXPERIENCES</p>
+        <div class="ps">
+            <p class="p">Go where others don't go. See what others don't see. Let Hakuna Matata take you on journeys of adventure and discovery in the world's most captivating destinations. Dive deep with mantas in Maldivian waters. Walk among elephants in northern Thailand. Soar above a tapestry of tea fields in Sri Lanka. </p>
+            <p class="p">From journeys of discovery to journeys of serenity, Hakuna Matata invites you to immerse yourself in each of our destinations with our Signature Experiences. </p>
+        </div>
+         <div class="containerr container--full container-full">
+            <div class="card col-md-6 col-sm-12" *ngFor="let country of country">
+                <a [routerLink]="['/experience/experience-details',country.id]">
+                    <div class="card-image uno image-fluid p-0 m-0">
+                        <img src="{{country.image}}" alt="" width="100%">
+                    </div>
+                    <div class="card-image dos image-fluid p-0 m-0">
+                        <video src="{{ country.video_url }}" [muted]="true" autoplay loop></video>
+                    </div>
+                    <div class="card-img-overlay one">
+                        <p class="t-name">{{country.name}}</p>
+                        <p class="catchy_phrase">{{country.catchy_phrase | titlecase}}</p>
+                    </div>
+                    <div class="card-img-overlay two">
+                        <p class="catchy_phrase">{{country.catchy_phrase | titlecase}}</p>
+                        <p class="t-name">{{country.tag_name}}</p>
+                        <p class="explore">EXPLORE</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="section-footerr">
+            <a routerLink="/experience" class="btn btn-experience">Explore All Signature Experiences</a>
+        </div>
+    </div>
+</div>

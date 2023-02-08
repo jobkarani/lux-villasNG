@@ -1,0 +1,434 @@
+.container-full{
+    display: block;
+}
+
+.socials{
+    display: flex;
+    background-color: #141313;
+    padding: 20px 50px;
+}
+
+.left{
+    display: block;
+    text-align: left;
+}
+
+.contact{
+    display: flex;
+}
+
+.icons{
+    display: flex;
+    padding: 10px 0;
+}
+
+.email{
+    margin: 0 20px;
+}
+
+.right{
+    display: block;
+    position: relative;
+    top: 0;
+    right: -50%;
+}
+
+h2{
+    color: #fff;
+    font-size: medium;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.fa-phone, .fa-envelope{
+    margin-right: 10px;
+    font-size: 1.55em;
+    color: #FFC93C;
+}
+
+.fa-brands{
+    width: 28px;
+    height: 28px;
+    font-size: 1.55em;
+    color: #FFC93C;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+a{
+    transition: border-bottom .25s;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 0.25em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-middle{
+    width: 100%;
+    padding: 30px 0 60px;
+    border-top: 1px solid #2b2b2d;
+    display: flex;
+    background-color: #141313;
+}
+
+.lists{
+    display: flex;
+}
+
+.one ul,.two ul, .three ul{
+    display: block;
+}
+
+.one,.two{
+    display: inline-block;
+    padding-right: 250px;
+    margin: 5px 0 4px;
+    vertical-align: top;
+}
+
+li{
+    list-style-type: none;
+    margin: 10px 0;
+    border-bottom: 1px solid transparent;
+    transition: border .25s;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5em;
+    letter-spacing: .05em;
+}
+
+.subscribe{
+    padding: 0 120px;
+}
+
+input{
+    width: 300px;
+    background-color: inherit;
+    color: #fff;
+    padding: 10px 5px;
+    border: 1px solid #2b2b2d;
+}
+
+.footer-hotels {
+    background: #0e0e0d;
+    padding: 10px 0;
+}
+
+.footer-brand {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-brand__item {
+    display: flex;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0 5px;
+}
+
+.footer-brand__link {
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.colored {
+    width: 60%;
+    height: inherit;
+}
+
+.footer-bottom {
+    background: #0e0e0d;
+    border-top: 1px solid #2b2b2d;
+}
+
+.footer-detail {
+    position: relative;
+}
+
+.container{
+    position: relative!important;
+    max-width: 1600px;
+    padding: 20px 20px;
+    margin: 0 auto;
+}
+
+.copyright {
+    float: left;
+    width: 35%;
+    color: #999;
+    font-size: .75em;
+    font-weight: 300;
+    line-height: 1.7142857143em;
+    letter-spacing: .05em;
+}
+
+.img{
+    margin: 0 90px;
+}
+
+.joboy{
+    float: right;
+    color: #999;
+    font-size: .75em;
+    font-weight: 300;
+    line-height: 1.7142857143em;
+    letter-spacing: .05em;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .container-full{
+        margin-bottom: 0;
+    }
+
+    .socials{
+        display: block;
+    }
+    
+    .left{
+        display: block;
+    }
+
+    .right{
+        display: block;
+        display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .contact{
+        display: block;
+    }
+
+    .phone, .email{
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 2em;
+        margin-top: 5%;
+    }
+
+    .icons{
+        margin: 2% 40%;
+    }
+
+    .icons>a{
+        padding: 0 5px;
+        font-size: 1.5em;
+    }
+
+    .footer-middle{
+        display: block;
+    }
+
+    .subscribe{
+        text-align: center;
+    }
+
+    
+
+    li>a{
+        font-size: 1.1em;
+        width: 100%;
+    }
+
+    .footer-brand__item {
+        display: flex;
+        vertical-align: middle;
+        padding: 0;
+        margin: 0 5px;
+    }
+    
+    .footer-brand__link {
+        display: block;
+        width: 180px;
+        height: 60px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .copyright {
+        float: left;
+        width: 35%;
+        color: #999;
+        font-size: .8em;
+        font-weight: 300;
+        line-height: 1.7142857143em;
+        letter-spacing: .05em;
+    }
+    
+    .img{
+        margin: 0 90px;
+    }
+    
+    .joboy{
+        float: right;
+        color: #999;
+        font-size: .8em;
+        font-weight: 300;
+        line-height: 1.7142857143em;
+        letter-spacing: .05em;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .container-full{
+        margin-bottom: 0;
+    }
+
+    .socials{
+        display: block;
+        padding: 20px 30px;
+    }
+    
+    .left{
+        display: block;
+    }
+
+    .right{
+        display: block;
+        display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    h2{
+        color: #fff;
+        font-size: medium;
+        font-weight: 700;
+        padding: 10px 0;
+    }
+
+    .email{
+        margin: 0 5px;
+    }
+
+    .email, .phone{
+        font-size: medium;
+    }
+    
+    .fa-phone, .fa-envelope{
+        margin-right: 10px;
+        font-size: medium;
+        color: #FFC93C;
+    }
+    
+    .fa-brands{
+        width: 28px;
+        height: 28px;
+        font-size: large;
+        color: #FFC93C;
+        vertical-align: middle;
+        margin-right: 0.5em;
+    }
+
+    .contact{
+        display: block;
+    }
+
+    .phone, .email{
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .chat{
+        margin-left: 90px !important;
+    }
+
+    .icons{
+        margin: 5px 80px;
+    }
+
+    .icons>a{
+        padding: 0 5px;
+    }
+
+    .footer-middle{
+        display: block;
+    }
+
+    .lists{
+        display: block;
+    }
+
+    .one, .two, .three{
+        display: block;
+        width: 100%;
+    }
+
+    .one, .two{
+        width: 100%;
+    }
+
+    .one>.ul,.two>.ul{
+        width: 200%;
+    }
+
+    .subscribe{
+        padding: 0 20px;
+    }
+
+    .footer-brand__item{
+        display: block;
+        text-align: center;
+    }
+
+    .footer-brand__link{
+        width: 30%;
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0;
+    }
+
+    .footer-bottom>.footer-detail>.cont{
+        display: block;
+        position: relative !important;
+        max-width: 1600px;
+        padding: 20px 20px;
+        margin: 0 auto;
+    }
+
+    .copyright {
+        text-align: center;
+        margin-bottom: -1%;
+        width: 100%;
+        color: #999;
+        font-size: .75em;
+        font-weight: 300;
+        line-height: 1.7142857143em;
+        letter-spacing: .05em;
+    }
+
+    .img{
+        margin: 20px 90px;
+    }
+
+    .joboy{
+        text-align: center;
+        margin-bottom: -8%;
+        float: none;
+        color: #999;
+        width: 100%;
+        font-size: .75em;
+        font-weight: 300;
+        line-height: 1.7142857143em;
+        letter-spacing: .05em;
+    }
+}

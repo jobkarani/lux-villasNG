@@ -1,0 +1,64 @@
+<div class="section--center-content">
+    <div class="full-bg">
+        <img src="{{singleRestaurant[0].gallery1}}" alt="">
+    </div>
+</div>
+
+<div class="section--light-grey" *ngFor="let rest of singleRestaurant">
+    <div class="container--mw1320">
+        <div class="content-intro-complex">
+            <div class="section-header">
+                <p class="sec-head">{{rest.catchy_phrase}}</p>
+            </div>
+        </div>
+        <div class="two">
+            <div class="image-col">
+                <img src="{{rest.image}}" alt="">
+            </div>
+            <div class=" text-col">
+                <div class="content-intro">
+                    <strong>{{rest.heading}}</strong>
+                </div>
+                <div class="readmore">
+                    <p class="t-cm">{{rest.description}}</p>
+                </div>
+                <div class="complementary">
+                    <p class="info">Info</p>
+                    <div class="features-special">
+                        <p><i class="fa-solid fa-utensils"></i> {{rest.info1}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="four">
+        <p class="includes">Opening Hours</p>
+        <div class="static-list__content">
+            <p class="time"><i class="fa-solid fa-clock"></i> {{rest.timeline}}</p>
+        </div>
+    </div>
+
+    <div class="four">
+        <p class="includes">Contact Info</p>
+        <div class="static-list__content">
+            <div class="contact">
+                <p class="static-list__icon"><i class="fa-solid fa-envelope"></i> <a href="mailto:{{rest.email}}">{{rest.email}}</a></p>
+                <p class="static-list__icon"><i class="fa-solid fa-phone"></i> <a href="tel:{{rest.phone}}">{{rest.phone}}</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slideshow-container" *ngFor="let rest of singleRestaurant">
+    <div class="mySlides fade">
+        <img  [src]="['rest.gallery1']" >
+    </div>
+    
+    <div class="mySlides fade">
+        <img [src]="['rest.gallery2']" >
+    </div>
+    
+    <div class="mySlides fade">
+        <img [src]="['rest.gallery3']" >
+    </div>
+</div>

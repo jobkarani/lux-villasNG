@@ -1,0 +1,57 @@
+<div class="container-full start" >
+    <video src="{{ singleCountry[0].video_url }}"  loop controls></video>
+</div>
+
+<div class="container-full">
+    <div  class="section--dark-grey" >
+        <div class="section-header">
+            <p class="section-header__title t-xs">{{singleCountry[0].name}}</p>
+        </div>
+        <p class="section-header__textt">{{singleCountry[0].catchy_phrase}}</p>
+        <p class="p">{{singleCountry[0].description1}}</p>
+        <div class="cont">
+            <img src="{{ singleCountry[0].image_toper}}" >
+        </div>
+        <div class="section-header">
+            <p class="section-header__title t-xs">EXPERIENCE {{singleCountry[0].name}}</p>
+        </div>
+        <p class="p">{{singleCountry[0].description2}}</p>
+
+        <div class="section-footerr">
+            <a routerLink="/experience" class="btn btn-experience">MORE INFO</a>
+        </div>
+    </div>
+</div>
+
+<div class="container-full section--white">
+    <p class="villah1">Discover the {{countryVilla[0].name}}</p>
+    <div class="flex-container">
+        <div class="offer" *ngFor="let villa of countryVilla">
+            <div class="static-list-item">
+                <div class="static-list-container">
+                    <a routerLink="#" >
+                        <div class="static-list__image">
+                            <img  src="{{villa.image}}" alt="">
+                        </div>
+                    </a>
+                    <div class="static-list-texts">
+                        <div class="static-list-content">
+                            <div class="static-list-text">
+                                <p class="country">{{villa.country_name}}</p>
+                            </div>
+                            <p class="static-list__title"><a routerLink="#">{{villa.heading | uppercase}}</a></p>
+                            <p class="static-list-price"><span class="currency">USD</span> {{villa.price}}</p>
+                            <div class="readmore">
+                                <p class="desc">{{villa.description}}</p>
+                            </div>
+                        </div>
+                        <div class="static-list__extra-links">
+                            <a routerLink="#" class="btn btn-gold">Book Now</a>
+                            <a routerLink="#" class="btn btn-ghost">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,107 @@
+<div class="container-full">
+  <form action="" [formGroup]="bookingFormGroup">
+    <div class="nike form-row d-flex">
+      <div class="form-group col-6">
+        <label for="inputfirstname">First Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputfirstname"
+          placeholder="First Name"
+          formControlName="firstname"
+        />
+      </div>
+      <div class="form-group col-6 ms-2">
+        <label for="inputlastname">Last Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputlastname"
+          placeholder="Last Name"
+          formControlName="lastname"
+        />
+      </div>
+    </div>
+
+    <div class="nike form-row d-flex">
+      <div class="form-group col-6">
+        <label for="inputemail">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="inputemail"
+          placeholder="email"
+          formControlName="email"
+        />
+      </div>
+      <div class="form-group col-6 ms-2">
+        <label for="inputphone">Phone Number</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputphone"
+          placeholder="Phone"
+          formControlName="phone"
+        />
+      </div>
+    </div>
+
+    <div class="nike form-row d-flex">
+      <div class="form-group col-6">
+        <label for="inputvilla">Villa</label>
+        <select id="inputvilla" class="form-control" formControlName="villa">
+          <option selected>Choose a Villa</option>
+          <option *ngFor="let villa of villas" [value]="villa.id">
+            {{ villa.name | titlecase }}
+          </option>
+        </select>
+      </div>
+      <div class="form-group col-6 ms-2">
+        <label for="inputguests">No of Guests</label>
+        <input
+          type="number"
+          class="form-control"
+          id="inputguests"
+          placeholder="Guests"
+          formControlName="guestsnumber"
+        />
+      </div>
+    </div>
+    <div class="nike form-row d-flex">
+      <div class="form-group col-6">
+        <label for="inputstartdate">Check In</label>
+        <input
+          type="date"
+          class="form-control"
+          id="inputstartdate"
+          placeholder="Select a date"
+          formControlName="start_date"
+        />
+      </div>
+      <div class="form-group col-6 ms-2">
+        <label for="inputenddate">Check Out</label>
+        <input
+          type="date"
+          class="form-control"
+          id="inputenddate"
+          placeholder="Select a date"
+          formControlName="end_date"
+        />
+      </div>
+    </div>
+    <div class="nike form-group">
+      <label for="inputspacialrequest">Special Request</label>
+      <textarea
+        type="text"
+        class="form-control"
+        id="inputspacialrequest"
+        placeholder="Tell us something ..."
+        formControlName="special_requests"
+      >
+      </textarea>
+    </div>
+    <button (click)="onSubmit()" type="submit" class="nike btn">
+      Make Reservation
+    </button>
+  </form>
+</div>
