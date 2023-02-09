@@ -79,7 +79,11 @@ export class BookComponent implements OnInit {
           // You can redirect users to all bookings or the booking made page
         },
         (error) => {
-          console.log(error);
+          this.mainService.showToastMessage(
+            AppEnums.ToastTypeSuccess,
+            "Something went wrong.",
+            'Error'
+          );
         }
       );
   }
