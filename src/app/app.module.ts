@@ -7,12 +7,11 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { TitleCasePipePipe } from './Pipes/title-case-pipe.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TitleCasePipePipe,
-  ],
+  declarations: [AppComponent, TitleCasePipePipe],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -20,9 +19,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],
-
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,41 +1,93 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit, ViewChild  } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AppEnums } from 'src/app/enums/app';
 import { Booking } from 'src/app/Interfaces/booking';
 import { Villa } from 'src/app/Interfaces/villa';
+import { MainService } from 'src/app/Services/main.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-book',
   templateUrl: './book.component.html',
-  styleUrls: ['./book.component.css']
+  styleUrls: ['./book.component.css'],
 })
-export class BookComponent implements OnInit{
-  villa: Villa[] = [];
+export class BookComponent implements OnInit {
+  villas: Villa[] = [];
+  bookingFormGroup: FormGroup;
 
-  booking : Booking = {
-    start_date: new Date(), 
-    end_date: new Date(), 
-    guestsnumber: 0, 
-    special_requests: '', 
-    villa: '', 
-    firstname: '',
-    lastname: '',
-    phone: '',
-    email: '',
-  };
- 
-
-  constructor(private http: HttpClient) {}
+  constructor(
+    private router: Router,
+    private _formBuilder: FormBuilder,
+    private mainService: MainService
+  ) {
+    this.bookingFormGroup = _formBuilder.group({
+      firstname: ['', Validators.required],
+      lastname: ['', Validators.required],
+      phone: ['', Validators.required],
+      email: ['', [Validators.email, Validators.required]],
+      start_date: ['', Validators.required],
+      end_date: ['', Validators.required],
+      special_requests: [''],
+      villa: ['', Validators.required],
+      guestsnumber: ['', Validators.required],
+    });
+  }
 
   ngOnInit(): void {
-      this.http.get<Villa[]>('https://luxury-villasbe.up.railway.app/villas/').subscribe(data =>{
-        this.villa = data;
-        console.log(data);
-      })
+    this.getVillaNames();
+  }
+
+  getVillaNames() {
+    this.mainService
+      .makeAnyDataGetRequest(`${environment.MAIN_URL}/villas/`)
+      .subscribe(
+        (data) => {
+          this.villas = data;
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
   }
 
   onSubmit() {
-    this.http.post<Booking>('https://luxury-villasbe.up.railway.app/bookings/', this.booking).subscribe(
-            response => console.log(response),
-        );
+    if (!this.bookingFormGroup.valid) {
+      const controls = this.bookingFormGroup.controls;
+      for (const name in controls) {
+        if (controls[name].invalid) {
+          this.mainService.showToastMessage(
+            AppEnums.ToastTypeWarning,
+            'Required field',
+            name
+          );
+        }
+      }
+      return;
+    }
+    let capturedData: Booking = this.bookingFormGroup.value;
+    capturedData.villa = Number(capturedData.villa);
+
+    this.mainService
+      .makeDataPostRequest(`${environment.MAIN_URL}/bookings/`, capturedData)
+      .subscribe(
+        (data) => {
+          this.mainService.showToastMessage(
+            AppEnums.ToastTypeSuccess,
+            "Thank you!",
+            "Success"
+          );
+          
+          this.router.navigate(['/booking/thankyoupage']);
+        },
+        (error) => {
+          this.mainService.showToastMessage(
+            AppEnums.ToastTypeSuccess,
+            "Something went wrong.",
+            'Error'
+          );
+        }
+      );
   }
 } 
