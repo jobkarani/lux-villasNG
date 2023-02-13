@@ -226,7 +226,7 @@ video{
 
 .currency{
     color: #FFC93C;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .readmore{
