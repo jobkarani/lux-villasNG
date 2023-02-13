@@ -100,6 +100,9 @@ li{
 .subscribe{
     padding: 0 120px;
 }
+form{
+    display: flex;
+}
 
 input{
     width: 300px;
@@ -107,6 +110,13 @@ input{
     color: #fff;
     padding: 10px 5px;
     border: 1px solid #2b2b2d;
+}
+
+.fa-play{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #FFC93C;
 }
 
 .footer-hotels {

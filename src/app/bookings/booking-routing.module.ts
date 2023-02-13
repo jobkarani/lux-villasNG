@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BookComponent } from './book/book.component';
+import { BookingReceiptComponent } from './booking-receipt/booking-receipt.component';
 import { BookingsComponent } from './bookings.component';
 
 const routes: Routes = [
@@ -9,7 +10,7 @@ const routes: Routes = [
     component: BookingsComponent,
     children: [
         {path:"",component:BookComponent},
-        // { path: 'country-details/:id', component: CountryDetailsComponent },
+        { path: 'thankyoupage', component: BookingReceiptComponent },
       ],
   }
 ];

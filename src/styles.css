@@ -6,7 +6,8 @@
     box-sizing: border-box;
   }
 body,html{
-    font-family: "Poppins", sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
     overflow-y: auto;
     margin: 0;

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AppEnums } from 'src/app/enums/app';
 import { Booking } from 'src/app/Interfaces/booking';
 import { Villa } from 'src/app/Interfaces/villa';
@@ -17,6 +18,7 @@ export class BookComponent implements OnInit {
   bookingFormGroup: FormGroup;
 
   constructor(
+    private router: Router,
     private _formBuilder: FormBuilder,
     private mainService: MainService
   ) {
@@ -57,7 +59,7 @@ export class BookComponent implements OnInit {
         if (controls[name].invalid) {
           this.mainService.showToastMessage(
             AppEnums.ToastTypeWarning,
-            'Requeired field',
+            'Required field',
             name
           );
         }
@@ -73,10 +75,11 @@ export class BookComponent implements OnInit {
         (data) => {
           this.mainService.showToastMessage(
             AppEnums.ToastTypeSuccess,
-            "Thank you! We'll get back to you soon",
-            'Success'
+            "Thank you!",
+            "Success"
           );
-          // You can redirect users to all bookings or the booking made page
+          
+          this.router.navigate(['/booking/thankyoupage']);
         },
         (error) => {
           this.mainService.showToastMessage(
@@ -87,4 +90,4 @@ export class BookComponent implements OnInit {
         }
       );
   }
-}
+} 

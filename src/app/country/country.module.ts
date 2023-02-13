@@ -5,6 +5,7 @@ import { CountryDetailsComponent } from './country-details/country-details.compo
 import { CountryComponent } from './country.component';
 import { SharedModule } from '../shared/shared.module';
 import { CountryRoutingModule } from './country-routing.module';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 
@@ -12,7 +13,8 @@ import { CountryRoutingModule } from './country-routing.module';
   declarations: [
     CountryComponent,
     CountryListComponent,
-    CountryDetailsComponent
+    CountryDetailsComponent,
+    CarouselComponent
   ],
   imports: [
     CommonModule,
