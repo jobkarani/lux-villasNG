@@ -18,7 +18,7 @@
         <p class="p">{{singleCountry[0].description2}}</p>
 
         <div class="section-footerr">
-            <a routerLink="/experience" class="btn btn-experience">Enquire Now</a>
+            <a routerLink="/experience" class="btn btn-experience">More Experiences</a>
         </div>
     </div>
 </div>
@@ -29,7 +29,7 @@
         <div class="offer" *ngFor="let villa of countryVilla">
             <div class="static-list-item">
                 <div class="static-list-container">
-                    <a routerLink="#" >
+                    <a [routerLink]="['/villas/villa-details',villa.id]" >
                         <div class="static-list__image">
                             <img  src="{{villa.image}}" alt="">
                         </div>
@@ -40,14 +40,14 @@
                                 <p class="country">{{villa.country_name}}</p>
                             </div>
                             <p class="static-list__title"><a routerLink="#">{{villa.heading | uppercase}}</a></p>
-                            <p class="static-list-price"><span class="currency">USD</span> {{villa.price}}</p>
+                            <p class="static-list-price"><span class="currency">Usd</span> {{villa.price}}</p>
                             <div class="readmore">
                                 <p class="desc">{{villa.description}}</p>
                             </div>
                         </div>
                         <div class="static-list__extra-links">
-                            <a href="" class="btn btn-gold">Book Now</a>
-                            <a href="" class="btn btn-ghost">See More</a>
+                            <a routerLink="/booking" class="btn btn-gold">Book Now</a>
+                            <a [routerLink]="['/villas/villa-details',villa.id]" class="btn btn-ghost">See More</a>
                         </div>
                     </div>
                 </div>

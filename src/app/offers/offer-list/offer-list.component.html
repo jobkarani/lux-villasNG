@@ -20,7 +20,7 @@
                     <p class="p">Experience Hakuna Matata Tours with extraordinary offers curated for you.</p>
                 </div>
                 <div class="section-footer">
-                    <a routerLink="/villas" class="btn btn-book">BOOK NOW</a>
+                    <a routerLink="/booking" class="btn btn-book">BOOK NOW</a>
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@
                                 <p class="static-list-price">FROM <span class="currency">USD</span> {{offer.old_price}}</p>
                                 <p class="dis-desc"><a [routerLink]="['/offers/offer-details',offer.id]">{{offer.description}}</a></p>
                                 <div class="static-list__extra-links">
-                                    <a routerLink="#" class="btn btn-gold">Book Now</a>
+                                    <a routerLink="/booking" class="btn btn-gold">Book Now</a>
                                     <a [routerLink]="['/offers/offer-details/',offer.id]" class="btn btn-ghost">See More</a>
                                 </div>
                             </div>

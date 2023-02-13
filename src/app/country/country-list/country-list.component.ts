@@ -20,7 +20,8 @@ export class CountryListComponent implements OnInit{
   countriesVillas: CountriesVillas[] = [];
   id: number =0;
 
- ngOnInit(){
+  ngOnInit(){
+
   this.homepagecountriesService.getHomeCountries().subscribe(countries => {
     this.country = countries;
   });
