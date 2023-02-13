@@ -14,3 +14,11 @@ body,html{
     padding: 0;
 }
 html, body { height: 100%; }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.blue-snackbar {
+    --mdc-snackbar-container-color: #2196f3;
+    --mat-mdc-snack-bar-button-color: #fff
+    --mdc-snackbar-supporting-text-color: #fff;
+  }

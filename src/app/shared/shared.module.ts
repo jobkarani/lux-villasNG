@@ -5,6 +5,7 @@ import { NavigationComponent } from '../components/navigation/navigation.compone
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from '../components/footer/footer.component';
 import { LoginConditionComponent } from '../components/login-condition/login-condition.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -18,10 +19,12 @@ import { LoginConditionComponent } from '../components/login-condition/login-con
         BaseLayoutComponent,
         NavigationComponent,
         FooterComponent,
+        MatSnackBarModule,
     ],
     imports: [
         CommonModule,
         RouterModule,
+        MatSnackBarModule,
     ]
 })
 export class SharedModule { }

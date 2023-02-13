@@ -57,11 +57,7 @@ export class BookComponent implements OnInit {
       const controls = this.bookingFormGroup.controls;
       for (const name in controls) {
         if (controls[name].invalid) {
-          this.mainService.showToastMessage(
-            AppEnums.ToastTypeWarning,
-            'Required field',
-            name
-          );
+          this.mainService.showSnackBarMessage(`Missing Field ${name}`)
         }
       }
       return;
@@ -73,20 +69,12 @@ export class BookComponent implements OnInit {
       .makeDataPostRequest(`${environment.MAIN_URL}/bookings/`, capturedData)
       .subscribe(
         (data) => {
-          this.mainService.showToastMessage(
-            AppEnums.ToastTypeSuccess,
-            "Thank you!",
-            "Success"
-          );
+          this.mainService.showSnackBarMessage("success"),
           
           this.router.navigate(['/booking/thankyoupage']);
         },
         (error) => {
-          this.mainService.showToastMessage(
-            AppEnums.ToastTypeSuccess,
-            "Something went wrong.",
-            'Error'
-          );
+          this.mainService.showSnackBarMessage(error)
         }
       );
   }
