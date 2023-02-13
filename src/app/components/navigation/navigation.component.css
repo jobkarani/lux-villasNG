@@ -25,13 +25,17 @@ span {
   padding-top: 1%;
 }
 
+.left, .right{
+  width: 50%;
+}
+
 .best{
   height: 16px;
 }
 
 .gogo{
   max-height: 65px;
-  margin: 0 auto;
+  margin: 0 0;
   transition: max-height 1s cubic-bezier(.19,1,.22,1),margin 1s cubic-bezier(.19,1,.22,1);
 }
 
@@ -39,7 +43,7 @@ span {
   float: right;
   max-width: 35%;
   height: 50px;
-  padding: 1% 35px;
+  padding: 15px 35px;
   overflow: hidden;
   color: #fff;
   font-weight: 600;
