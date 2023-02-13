@@ -88,6 +88,13 @@
     font-size: 4rem;
     color: #fff;
   }
+
+  @media screen and (max-width: 850px) {
+   #carousel{
+    display: none;
+   }
+  }
+
   @media screen and (max-width: 640px) {
       .door .description {
     font-size: 2rem;
