@@ -18,7 +18,7 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .blue-snackbar {
-    --mdc-snackbar-container-color: #2196f3;
+    --mdc-snackbar-container-color: #FFC93C;
     --mat-mdc-snack-bar-button-color: #fff
     --mdc-snackbar-supporting-text-color: #fff;
   }
