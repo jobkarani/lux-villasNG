@@ -1,5 +1,5 @@
 .slideshow-container{
-    margin-top: 9%;
+    margin-top: 0%;
 }
 
 .mySlides {
@@ -243,6 +243,11 @@
 }
 
 @media only screen and (max-width: 500px) {
+
+    .slideshow-container{
+        margin-top: 0;
+    }
+
     .one{
         padding: 0;
         margin-top: 30%;

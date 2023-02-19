@@ -1,48 +1,30 @@
-  /* start of navbar  */
-
-.navbars ul{
-  list-style-type: none;
+header{
+  padding: 12px 0;
+  margin:0;
+  background-color: #222;
 }
 
-span {
-  color: white;
-}
-
-.header {
-  background-color: #353336;
-}
-
-.navbars {
-  display: block;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1.5rem;
-  z-index: 999;
-}
-
-.sec{
+.container{
   display: flex;
-  padding-top: 1%;
+  margin: 0;
+  min-width: 100%;
 }
 
-.left, .right{
-  width: 50%;
+.logo{
+  display: flex;
+  justify-content: right;
 }
 
-.best{
-  height: 16px;
-}
-
-.gogo{
-  max-height: 65px;
-  margin: 0 0;
-  transition: max-height 1s cubic-bezier(.19,1,.22,1),margin 1s cubic-bezier(.19,1,.22,1);
+.logo img{
+  width: 8vw;
+  height: 8vh; 
 }
 
 .book-btn-nav{
-  float: right;
-  max-width: 35%;
+  float: left;
+  max-width: 100%;
   height: 50px;
+  margin-top: 3px;
   padding: 15px 35px;
   overflow: hidden;
   color: #fff;
@@ -51,44 +33,31 @@ span {
   border-radius: 0;
 }
 
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010;
+.book-btn-nav:hover{
+  background-color: transparent;
+  color: #FFC93C;
+  border: 1px solid #FFC93C;
 }
 
-.hamburger {
-  display: none;
+.menu{
+  margin-top: 18px;
 }
 
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010;
+.menu ul{
+  padding: 0;
+  margin: 0;
 }
 
-.nav-menus {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.menu ul li{
   list-style-type: none;
+  color: #fff;
+  display: inline-block;
+  margin-left: 14px;
 }
 
-.nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style-type: none;
-  padding: 10px 20%;
-  margin-bottom: 0;
+.menu ul li:hover{
+  cursor: pointer;
+  transition: .5s ease-in-out;
 }
 
 .nav-link{
@@ -99,7 +68,7 @@ span {
   padding: 8px 10px;
   line-height: 1em;
   font-weight: 800;
-  font-size: small;
+  font-size: 15px;
   transition: color .25s;
   }
 
@@ -109,156 +78,17 @@ span {
   cursor: pointer;
 }
 
-.nav-logos img {
-  font-size: 2.1rem;
-  font-weight: 500;
-  color: #fff;
-  height: auto;
-  width: 100%;
+.active-link{
+  color: #FFC93C;
 }
-
-.menu-header{
-  background-color: #353336;
-}
-
-.nav-menu-logos{
-  color: #fff;
-  font-size: 24px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  text-decoration: none;
-}
-
-.nav-menu-logos:hover{
-  text-decoration: none;
-  color: #fff;
-}
-
-.bar{
-  background: #FFC93C;
-}
-
-.menu-header{
-  display: none;
-}
-
-/* media screen  */
-
-@media only screen and (max-width: 1306px) {
-  .nav-item {
-    margin-left: 2rem;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .nav-item {
-    margin-left: 0 !important;
-  }
-}
-
-@media only screen and (max-width: 1033px) {
-  .phoneHeader{
-    margin-left: 2rem;
-  }
-
-  .contact{
-    margin-top: 4rem;
-  }
-
-  .serv{
-      margin-top: 4rem;  
-  }
-
-  .about{
-      margin-top: 4rem;  
-  }
-  
-  .menu-header{
-    display: block;
-    position: fixed;
-    width: 100%;
-    z-index: 988;
-  }
-
-  .nav-menus {
-    position: fixed;
-    left: -100%;
-    top: 5.3rem;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    flex-direction: column;
-    background-color: #353336;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    z-index: 899;
-  }
-
-  .nav-menu{
-    display: none;
-  }
-
-  .nav-link {
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #FFC93C;
-  }
-  
-  .nav-link:hover {
-    color: #fff;
-  }
-  
-  .nav-menus.active {
-    left: 0;
-  }
-
-  .nav-items {
-    margin: 1rem 0;
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    -webkit-transform: translateY(8px) rotate(45deg);
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-    transform: translateY(-8px) rotate(-45deg);
-  }
-}
-/* end of navbar  */
-
 @media only screen and (max-width: 850px) {
-  .navbars{
-    margin: 0;
-    display: flex;
-    padding: 0 5px;
-  }
 
-  .fixed-top{
-    display: none;
-  }
-
-  .gaga{
-    padding: 10px 0;
-    max-height: 85px;
-    margin-left: -10%;
-    transition: max-height 1s cubic-bezier(.19,1,.22,1),margin 1s cubic-bezier(.19,1,.22,1);
+  header{
+    padding: 8px 0;
   }
 
   .book-btn-nav{
-    float: right;
+    float: left;
     max-width: 85%;
     height: 70px;
     padding: 22px 15px !important;
@@ -270,75 +100,174 @@ span {
     font-size: large;
   }
 
-  .hamburger {
-    margin: 0;
-    max-height: 85px;
-    padding-left: 35px;
-    border-left: 2px solid #FFC93C;
+  .logo{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo img{
+    width: 12vw;
+    height: 6vh; 
   }
 
-  .bar{
-    height: 5px;
-    width: 55px;
-    margin: 10px 0;
+  .menu{
+    position: absolute;
+    right: -280px;
+    top: 44px;
+    width: 280px;
+    height: 100%;
+    background-color: #222;
+    transition: .4s ease-in-out;
+    z-index: 999;
+  }
+
+  .menu ul li{
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0 10px 26px ;
+    border-bottom: 1px solid #312f2f;
+
+  }
+
+  .menu-icon{
+    display: inline-block;
+    position: relative;
+    right: 0;
+    top: 20px;
+  }
+
+  .menu-icon span{
+    width: 32px;
+    height: 3px;
+    background: #FFC93C;
+    display: block;
+    transition: .2s ease-in-out;
+  }
+
+  .menu-icon span:nth-child(2){
+    margin: 4px 0;
+  }
+
+  .menu-icon-Class span:nth-child(2){
+    display: none;
+  }
+
+  .menu-icon-Class span:nth-child(1){
+    transform: rotate(45deg);
+  }
+
+  .menu-icon-Class span:nth-child(3){
+    transform: rotate(-45deg);
+    margin-top: -3px;
+  }
+
+  .menuClass{
+    right: 0;
+    transition: .4s ease-in-out;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .header{
-    display: none;
-  }
 
-  .navbars{
-    margin: 0;
-    display: flex;
-    padding: 0 5px;
-  }
-
-  .nav-menus {
-    position: fixed;
-    left: -100%;
-    top: 4rem;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    flex-direction: column;
-    background-color: #353336;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    z-index: 899;
-  }
-
-  .gaga{
+  header{
     padding: 10px 0;
-    max-height: 65px;
-    margin: 0 auto;
-    transition: max-height 1s cubic-bezier(.19,1,.22,1),margin 1s cubic-bezier(.19,1,.22,1);
+    background-color: #222;
+  }
+
+  .container{
+    width: 100%;
+  }
+
+  .book{
+    width: 30%;
+  }
+
+  .two{
+    width: 50%;
+  }
+
+  .three{
+    width: 20%;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo img{
+    width: 26vw;
+    height: 7vh; 
   }
 
   .book-btn-nav{
-    float: right;
-    max-width: 45%;
+    float: left;
+    max-width: 100%;
     height: 50px;
-    padding: 13px 15px !important;
+    padding: 15px 10px !important;
     overflow: hidden;
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 14px;
     background-color: #FFC93C;
     border-radius: 0;
   }
 
-  .hamburger {
-    margin: 0;
-    padding-left: 15px;
-    border-left: 2px solid #FFC93C;
+  .menu{
+    position: absolute;
+    right: -280px;
+    top: 50px;
+    width: 280px;
+    height: 100%;
+    background-color: #222;
+    transition: .4s ease-in-out;
+    z-index: 999;
   }
 
-  .bar{
+  .menu ul li{
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0 10px 26px ;
+    border-bottom: 1px solid #312f2f;
+
+  }
+
+  .menu-icon{
+    display: inline-block;
+    position: relative;
+    right: 0;
+    top: 20px;
+  }
+
+  .menu-icon span{
+    width: 32px;
     height: 3px;
-    width: 25px;
-    margin: 5px 0;
+    background: #FFC93C;
+    display: block;
+    transition: .2s ease-in-out;
+  }
+
+  .menu-icon span:nth-child(2){
+    margin: 4px 0;
+  }
+
+  .menu-icon-Class span:nth-child(2){
+    display: none;
+  }
+
+  .menu-icon-Class span:nth-child(1){
+    transform: rotate(45deg);
+  }
+
+  .menu-icon-Class span:nth-child(3){
+    transform: rotate(-45deg);
+    margin-top: -3px;
+  }
+
+  .menuClass{
+    right: 0;
+    transition: .4s ease-in-out;
   }
 }

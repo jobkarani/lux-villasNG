@@ -288,7 +288,7 @@
 
 @media only screen and (max-width: 500px) {
     .cont{
-        margin-top: 35px;
+        margin-top: 0;
     }
 
     .t-p{

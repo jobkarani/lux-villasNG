@@ -365,7 +365,7 @@ ul li a{
 
 @media only screen and (max-width: 500px) {
     .section--dark-greyy{
-        margin-top: 12%;
+        margin-top: 0;
     }
 
     .section-textt{

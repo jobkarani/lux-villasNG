@@ -305,7 +305,7 @@ video{
 
 @media only screen and (max-width: 500px) {
     .start{
-        margin-top: 18%;
+        margin-top: 0;
     }
 
     .section-header{

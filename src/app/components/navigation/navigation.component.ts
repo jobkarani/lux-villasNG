@@ -5,29 +5,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.css']
 })
-export class NavigationComponent implements OnInit {
+export class NavigationComponent {
 
   constructor() {};
 
+  menuVar: boolean = false;
+  menu_icon_var: boolean = false;
 
-  ngOnInit(): void {
-
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".nav-menus");
-    const navLink = document.querySelectorAll(".nav-links");
-  
-    const mobileMenu = () => {
-      hamburger?.classList.toggle("active")
-      navMenu?.classList.toggle("active")
-    }
-  
-    const closeMenu = () => {
-      hamburger?.classList.remove("active")
-      navMenu?.classList.remove("active")
-    }
-  
-    hamburger?.addEventListener("click" , mobileMenu)
-    navLink.forEach((l) => l.addEventListener("click",closeMenu))
+  openMenu(){
+    this.menuVar =! this.menuVar;
+    this.menu_icon_var =! this.menu_icon_var;
   }
   
 }

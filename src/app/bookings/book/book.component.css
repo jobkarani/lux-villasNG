@@ -1,5 +1,5 @@
 .container-full{
-    margin-top: 8%;
+
     padding: 10% 10%;
     background-image: url('https://img.freepik.com/premium-photo/3d-rendering-hotel-s-reception-office-with-bell-key-wooden-desk_771335-41826.jpg?w=996');
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@ label{
 
 @media only screen and (max-width: 500px) {
     .container-full{
-        margin-top: 15%;
+        margin-top: 0;
         padding: 10% 2%;
     }
 
