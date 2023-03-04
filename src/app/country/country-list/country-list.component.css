@@ -357,6 +357,16 @@ ul li a{
         cursor: pointer;
         text-align: center;
     }
+
+    .uno>img{
+        width: 100% !important;
+        height:34vh !important;
+    }
+    
+    .dos>video{
+        width: 100% !important;
+        height: 34vh !important;
+    }
     
     .two{
         display: none;
@@ -421,6 +431,17 @@ ul li a{
         font-weight: 300;
         line-height: 1.5em;
         letter-spacing: .1em;
+    }
+
+    .card:hover .two{
+        top: 0;
+        text-shadow: 0 0 10px #000;
+        position: absolute;
+        right: 0;
+        top: 40px;
+        left: 0;
+        display: block;
+        text-align: center;
     }
 
     .section-footer {
@@ -489,4 +510,6 @@ ul li a{
         text-transform: uppercase;
         letter-spacing: .3em;
     }
+
+    
 }

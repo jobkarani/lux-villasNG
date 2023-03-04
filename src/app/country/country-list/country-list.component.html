@@ -28,7 +28,7 @@
           <div class="card col-md-6 col-sm-12" *ngFor="let country of country">
               <a [routerLink]="['/country/country-details',country.id]">
                   <div class="card-image uno image-fluid p-0 m-0">
-                      <img src="{{country.image}}" alt=""  width="100%">
+                      <img src="{{country.image}}" alt="">
                   </div>
                   <div class="card-image dos image-fluid p-0 m-0">
                     <video src="{{ country.video_url }}" [muted]="true" autoplay loop></video>
