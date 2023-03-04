@@ -112,10 +112,10 @@ header{
 
   .menu{
     position: absolute;
-    right: -280px;
+    right: -350px;
     top: 44px;
     width: 280px;
-    height: 100%;
+    height: auto;
     background-color: #222;
     transition: .4s ease-in-out;
     z-index: 999;
@@ -219,7 +219,7 @@ header{
     right: -280px;
     top: 50px;
     width: 280px;
-    height: 100%;
+    height: auto;
     background-color: #222;
     transition: .4s ease-in-out;
     z-index: 999;

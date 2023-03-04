@@ -13,6 +13,6 @@ export class BlogService {
   constructor(private http: HttpClient) {}
 
   getBlogDetails(id:number):Observable<Blog[]> {
-    return this.http.get<Blog[]>('https://luxury-villasbe.up.railway.app/blogDetails/'+ id);
+    return this.http.get<Blog[]>('https://http://127.0.0.1:8000/blogDetails/'+ id);
   }
 }

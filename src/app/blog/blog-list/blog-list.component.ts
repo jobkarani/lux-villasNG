@@ -14,7 +14,7 @@ export class BlogListComponent implements OnInit{
   constructor(private http:HttpClient) {};
 
   ngOnInit(): void {
-    this.http.get<Blog[]>('https://luxury-villasbe.up.railway.app/blogs/').subscribe(data=>{
+    this.http.get<Blog[]>('https://http://127.0.0.1:8000/blogs/').subscribe(data=>{
       this.blog = data;
       console.log(this.blog)
     })
