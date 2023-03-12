@@ -427,10 +427,11 @@ input{
     }
 
     .img{
-        margin: 20px 90px;
+        display: none;
     }
 
     .joboy{
+        padding-top: 8%;
         text-align: center;
         margin-bottom: -8%;
         float: none;
