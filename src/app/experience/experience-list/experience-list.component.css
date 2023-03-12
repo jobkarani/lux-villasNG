@@ -240,6 +240,37 @@
     .containerr>.card{
         width: 100%; 
     }
+
+    .card:hover .one{
+        top: 0;
+        display: none;
+    }
+    
+    .card:hover .two{
+        top: 0;
+        text-shadow: 0 0 10px #000;
+        position: absolute;
+        right: 0;
+        bottom: 40px;
+        left: 0;
+        display: block;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .uno>img{
+        width: 100% !important;
+        height:34vh !important;
+    }
+    
+    .dos>video{
+        width: 100% !important;
+        height: 34vh !important;
+    }
+    
+    .two{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -260,7 +291,6 @@
         vertical-align: middle;
         width:100%;
         height: 30vh;
-        margin-top: 18%;
     }
 
     .ps{
@@ -288,5 +318,16 @@
         line-height: 1.25;
         text-transform: uppercase;
         letter-spacing: .02em;
+    }
+
+    .card:hover .two{
+        top: 0;
+        text-shadow: 0 0 10px #000;
+        position: absolute;
+        right: 0;
+        top: 40px;
+        left: 0;
+        display: block;
+        text-align: center;
     }
 }
