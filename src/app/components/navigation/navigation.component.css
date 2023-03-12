@@ -178,6 +178,7 @@ header{
 
   .container{
     width: 100%;
+    padding: 5% 0;
   }
 
   .book{
@@ -216,9 +217,10 @@ header{
   }
 
   .menu{
+    padding: 20% 0;
     position: fixed;
     right: -280px;
-    top: 50px;
+    top: 72px;
     width: 280px;
     height: auto;
     background-color: #222;
