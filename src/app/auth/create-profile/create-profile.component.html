@@ -1,0 +1,59 @@
+<div class="container-full">
+    <form action="" [formGroup]="profileFormGroup">
+        <p class="h1 text-center">Create A Profile</p>
+      <div class="nike form-row ">
+        <div class="form-group col-12">
+          <label for="inputfirstname">First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputfirstname"
+            placeholder="First Name"
+            formControlName="firstname"
+          />
+        </div>
+      </div>
+
+      <div class="nike form-row ">
+        <div class="form-group col-12">
+            <label for="inputlastname">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputlastname"
+              placeholder="Last Name"
+              formControlName="lastname"
+            />
+          </div>
+      </div>
+  
+      <div class="nike form-row ">
+        <div class="form-group col-12">
+          <label for="inputemail">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputemail"
+            placeholder="email"
+            formControlName="email"
+          />
+        </div>
+      </div>
+      <div class="nike form-row ">
+        <div class="form-group col-12">
+            <label for="inputphone">Phone Number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputphone"
+              placeholder="Phone"
+              formControlName="phone"
+            />
+          </div>
+      </div>
+      <a  (click)="onSubmit()" type="submit" class="nike btn">
+        Create
+      </a>
+    </form>
+  </div>
+  

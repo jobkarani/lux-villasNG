@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NavigationComponent } from '../components/navigation/navigation.component';
 import { SharedModule } from '../shared/shared.module';
+import { ProfileComponent } from './profile/profile.component';
+import { CreateProfileComponent } from './create-profile/create-profile.component';
 
 
 
@@ -16,6 +18,8 @@ import { SharedModule } from '../shared/shared.module';
     AuthComponent,
     SignupComponent,
     LoginComponent,
+    ProfileComponent,
+    CreateProfileComponent,
   ],
   imports: [
     CommonModule,

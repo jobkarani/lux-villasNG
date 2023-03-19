@@ -1,0 +1,63 @@
+.container-full{
+    padding: 6.2% 1%;
+    background-image: url('https://img.freepik.com/free-photo/happy-black-family-toddler-pointing-laptop-screen-design-space_53876-97128.jpg?w=826&t=st=1679212321~exp=1679212921~hmac=5dbef65812ab092330239d93f43ae1a2c5a40906e164b52785439d8d96edceb8');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h1{
+    font-size: 28px;
+    color: #FFC93C;
+    margin-bottom: 10%;
+}
+
+form{
+    width: 35%;
+    padding: 5.3% 3%;
+    border: 1px solid rgba(255,201,60, .8);
+}
+
+.nike{
+    margin: 10px 0;
+}
+
+label{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.btn{
+    background-color: #fff;
+    border: 1px solid #FFC93C;
+    color: #FFC93C;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+
+@media only screen and (max-width: 850px) {
+    .btn{
+        margin-left: 33%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container-full{
+        margin-top: 0;
+        padding: 10% 2%;
+    }
+
+    label{
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .btn{
+        margin-left: 15%;
+    }
+}

@@ -10,6 +10,6 @@ export class LoginService {
   constructor(private http: HttpClient) { }
 
   logUser(userData: any): Observable<any>{
-    return this.http.post('https://luxury-villasbe.up.railway.app/login/', userData)
+    return this.http.post('https://luxury-villasbe.up.railway.app/auth/login/', userData)
   }
 }

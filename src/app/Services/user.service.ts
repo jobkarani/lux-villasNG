@@ -10,6 +10,6 @@ export class UserService {
   constructor(private http: HttpClient) { }
 
   registerNewUser(userData: any): Observable<any>{
-    return this.http.post('https://luxury-villasbe.up.railway.app/register/', userData)
+    return this.http.post('https://luxury-villasbe.up.railway.app/auth/register/', userData)
   }
 }
