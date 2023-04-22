@@ -1,12 +1,9 @@
 .thankyou-wrapper{
-    margin-top: 40px;
+  margin-top: 40px;
   width:100%;
   background:#ffffff; 
   padding:10px 0px 50px;
-}
-
-.thankyou-wrapper img{
-    margin-left: 20%;
+  text-align: center;
 }
 
 .thankyou-wrapper p{
@@ -15,26 +12,27 @@
   color:#333333;
   padding:20px 10px;
 }
-.thankyou-wrapper a{
-  font-size:16px;
+.thankyou-wrapper .a{
   text-align:center;
+  align-items: center;
   color:#ffffff;
+  font-size: 20px;
   display:block;
   text-decoration:none;
   background:#FFC93C;
-  margin: 5% 40% 0 40%;
-  padding:15px 15px;
+  margin: 5% 45%;
+  padding:15px 5%;
   border-radius: 2px;
 }
-.thankyou-wrapper a:hover{
-  font-size:16px;
+.thankyou-wrapper .a:hover{
   text-align:center;
-  color:#ffffff;
+  color:#FFC93C;
+  font-size: 20px;
   display:block;
   text-decoration:none;
-  background:#FFC93C;
-  margin:10px 40%;
-  padding:15px 15px;
+  background:#fff;
+  border: 1px solid #FFC93C;
+  padding:15px 5%;
 }
 
 @media only screen and (max-width: 850px) {
@@ -53,11 +51,11 @@
         font:14px Arial, Helvetica, sans-serif;
       }
 
-      .thankyou-wrapper a{
+      .thankyou-wrapper .a{
         font:13px Arial, Helvetica, sans-serif;
         margin:10px 20%;
       }
-      .thankyou-wrapper a:hover{
+      .thankyou-wrapper .a:hover{
         font:13px Arial, Helvetica, sans-serif;
         margin:10px 20%;
       }

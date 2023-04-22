@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Profile } from 'src/app/Interfaces/profile.model';
-import { ProfileService } from 'src/app/Services/profile.service';
+import { Register } from 'src/app/Interfaces/register';
+import { MainService } from 'src/app/Services/main.service';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -12,14 +13,16 @@ import { environment } from 'src/environments/environment';
 })
 export class CreateProfileComponent {
   profile: Profile[] = [];
+  register: Register[] = [];
   profileFormGroup: FormGroup;
 
   constructor(
       private router: Router,
       private _formBuilder: FormBuilder,
-      private profileService: ProfileService
+      private mainService : MainService
     ) {
     this.profileFormGroup = _formBuilder.group({
+      user: [this.register[1], Validators.required],
       firstname: ['', Validators.required],
       lastname: ['', Validators.required],
       phone: ['', Validators.required],
@@ -32,7 +35,7 @@ export class CreateProfileComponent {
       const controls = this.profileFormGroup.controls;
       for (const name in controls) {
         if (controls[name].invalid) {
-          this.profileService.showSnackBarMessage(`Missing Field ${name}`)
+          this.mainService.showSnackBarMessage(`Missing Field ${name}`)
         }
       }
       return;
@@ -40,16 +43,16 @@ export class CreateProfileComponent {
 
     let capturedData: Profile = this.profileFormGroup.value;
 
-    this.profileService
+    this.mainService
       .makeDataPostRequest(`${environment.MAIN_URL}/createProfile/`, capturedData)
       .subscribe(
         (data) => {
-          this.profileService.showSnackBarMessage("success"),
+          this.mainService.showSnackBarMessage("success"),
           
           this.router.navigate(['/home']);
         },
         (error) => {
-          this.profileService.showSnackBarMessage(error)
+          this.mainService.showSnackBarMessage(error)
         }
       );
   }

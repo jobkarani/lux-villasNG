@@ -28,6 +28,10 @@ export class MainService {
     return this.http.post<any>(fullUrl, data);
   }
 
+  createProfile(profileData: any) {
+    return this.http.post('https://luxury-villasbe.up.railway.app/createProfile', profileData);
+  }
+
   showSnackBarMessage(message: string) {
     this._snackBar.open(message, undefined, {
       duration: 3000,
