@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { Country } from 'src/app/Interfaces/country';
 
 @Component({
@@ -9,12 +10,17 @@ import { Country } from 'src/app/Interfaces/country';
 })
 export class ExperienceListComponent implements OnInit {
 
-  constructor(private http: HttpClient) {}
+  constructor(private meta: Meta, private http: HttpClient) {}
 
   country: Country[] = [];
 
 
   ngOnInit(): void {
+    this.meta.addTags([ 
+      { name: 'description', content: 'Hakuna Matata Tours' }, 
+      { name: 'keywords', content: 'Hakuna Matata Tours, Hakuna Matata, kenyan Hakuna Matata, Kenyan travel companies, Nairobi travel company, African travel company' } 
+    ]);
+
     this.http.get<Country[]>('https://luxury-villasbe.up.railway.app/country/').subscribe(data =>{
       this.country = data;
       console.log(data);

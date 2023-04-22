@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Meta } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { AppEnums } from 'src/app/enums/app';
 import { Booking } from 'src/app/Interfaces/booking';
@@ -18,6 +19,7 @@ export class BookComponent implements OnInit {
   bookingFormGroup: FormGroup;
 
   constructor(
+    private meta: Meta,
     private router: Router,
     private _formBuilder: FormBuilder,
     private mainService: MainService
@@ -36,6 +38,11 @@ export class BookComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.meta.addTags([ 
+      { name: 'description', content: 'Hakuna Matata Tours' }, 
+      { name: 'keywords', content: 'Hakuna Matata Tours, Hakuna Matata, kenyan Hakuna Matata, Kenyan travel companies, Nairobi travel company, African travel company' } 
+    ]);
+
     this.getVillaNames();
   }
 
