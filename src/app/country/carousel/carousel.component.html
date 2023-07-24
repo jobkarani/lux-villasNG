@@ -4,11 +4,19 @@
         <li data-target="#carousel" data-slide-to="1"></li>
         <li data-target="#carousel" data-slide-to="2"></li>
         <li data-target="#carousel" data-slide-to="3"></li>
+        <li data-target="#carousel" data-slide-to="4"></li>
     </ol>
     
     <!-- Carousel items -->
     <div class="carousel-inner">
       <div class="item active">
+        <div class="slide-content">
+          <video webkit-playsinline id="bgvid" autoplay loop [muted]="true" >
+            <source src="../../../assets/videos/five.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="item">
         <div class="slide-content">
           <video webkit-playsinline id="bgvid" autoplay loop [muted]="true" >
             <source src="../../../assets/videos/four.mp4" type="video/mp4">
